@@ -33,11 +33,12 @@ border: none;
 }
 .instagram-media-instagram-media-rendered{
     width: 100%;
-    height: 22rem;
-    border: 1px solid rgba(0,0,0,.2);
+    height: 13rem;
+    border: 1px  rgba(0,0,0,.2);
+    display: inline;
 }
 .renderautomatic{
-    height: 32rem;
+    height: 25rem;
     transition: height 0.3s ease 3s;
     display: inline;
     visibility: visible;
@@ -60,3 +61,5 @@ border: none;
     width: 1px;
 }
 
+ 
+ 

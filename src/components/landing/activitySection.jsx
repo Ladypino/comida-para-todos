@@ -39,13 +39,10 @@ const ActivitySectionF = () => {
     <div className='textActivitySection'>
     <strong>Actividad Resiente</strong>
 {""}
-     {/*          
-         instagram renderizado de ultimas imgs directo de la ap redirige,publica,likes 
-     <iframe className="renderautomatic" id="instagram-embed-0" src="https://www.instagram.com/p/CGQbzXknyKD/embed/?cr=1&amp;v=12&amp;wp=746&amp;rd=http%3A%2F%2Flocalhost%3A3000&amp;rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A2414.7549999997864%2C%22ls%22%3A1063.8099999996484%2C%22le%22%3A1066.3750000003347%7D;"></iframe>*/} 
      
-         instagram renderizado de ultimas img directo de la ap redirige y se actualiza cada 24 horas de forma automatica con la ultima informacion
+    <div className='render'>
  <iframe className='instagram-media-instagram-media-rendered' src="https://www.powr.io/instagram-feed/u/c349a139_1602450916#platform=embed" ></iframe> 
-       
+ </div> 
     </div>
    
 
