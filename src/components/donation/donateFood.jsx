@@ -132,7 +132,7 @@ function DonateFood ()  {
 				</div>
 				<div>
 				<p className='titleFormsCheckbox'>¿Con qué Empresa Amiga agendaste tu pedido?</p>
-					<select className='selectFormHuertas'
+					<select className='select'
 						name="empresa"
 						ref={
 							register({

@@ -75,6 +75,7 @@ const GetData = () => {
 
   return (
     <Fragment>  
+        
       <div className='contentIntranetForms'>
         <div className='textIntranetForms'>
           <h1 className='titleIntranetForms'>¡Bienvenido!</h1>
@@ -87,9 +88,27 @@ const GetData = () => {
           <button onClick={handleFoodShow} className='archiveBtnOff' >Despensa</button>
         </div>
       </div>
-      <div className ='tableIntra'>
+      {/* <div className ='tableIntra'>
         {showTable[0]}
-      </div>
+      </div> */}
+
+      {
+            showTable.map(arrayData => (
+               
+                 <div className="list-group-item" key={arrayData.data.id}>
+                  <div className="box">
+                     <p>{arrayData.data.nombre}</p>
+                       </div>
+                     <div className="box">
+                       <p>{arrayData.data.correo}</p>
+                      </div>
+                      <div className="box">
+                       <p>{arrayData.data.comuna}</p>
+                      </div>
+                      </div>
+                     ))
+                }
+                  
     </Fragment>
   );
 }
