@@ -36,24 +36,6 @@ border: none;
 }
 .instagram-media-instagram-media-rendered{
     width: 100%;
-<<<<<<< HEAD
-    height: 13rem;
-    border: 1px  rgba(0,0,0,.2);
-    display: inline;
-}
-.renderautomatic{
-    height: 25rem;
-    transition: height 0.3s ease 3s;
-    display: inline;
-    visibility: visible;
-    width: 20rem;
-    border-width: 0.5px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-    border-right-width: 1px;
-    margin-left: 1rem;
-=======
     height: 12rem;
     border: 1px  rgba(0,0,0,.2);
    
@@ -62,7 +44,6 @@ border: none;
 .text-center.hid.btn.btn-primary.btn-xs.design_2.js-hide-if-pos{
 display: none
 }
->>>>>>> 982a234f8611eaa17a640716e5254f51d02f3ead
 
 #editMe{
     display: none
@@ -73,10 +54,6 @@ background-color: white;
 width: 100%;
 }
 
-<<<<<<< HEAD
- 
- 
-=======
 
 .titleActSec{
     text-align: start;
@@ -94,4 +71,3 @@ width: 100%;
 .footerframe{
 width: 100%;
 }
->>>>>>> 982a234f8611eaa17a640716e5254f51d02f3ead
