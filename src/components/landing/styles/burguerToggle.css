@@ -37,6 +37,14 @@
   border: 2px solid #F4F4F4;
   padding: 16px 80px 16px 32px;
 }
+.boxSection:hover{
+  background: #FD4C00;
+  color:white;
+}
+.textBurgerToggle:hover{
+  color:white;
+}
+
 
 .oli{
   text-decoration: none;

@@ -41,6 +41,7 @@ const BurguerToggle = (props) => {
           <div className='boxSection'>
             <p className='textBurgerToggle'
               onClick={() => {
+                scroll.scrollTo(0)
                 props.setBurgerOn(!props.burgerOn)
               }}>Haz tu donación</p>
           </div>

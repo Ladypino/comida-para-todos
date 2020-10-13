@@ -10,7 +10,7 @@ import region from '../../img/AboutUs/whatWeArchived/region.png';
 function WhatWeArchived() {
   return (
     <div className='sectionWhatWeArchived'>
-      <h1 className='title'>NUESTRA RED HA LOGRADO</h1>
+      <h1>NUESTRA RED HA LOGRADO</h1>
       <div className='containerWhatWeArchived'>
       <div className='containerPhotoText'>
         <div className='eachPhotoArchived'>

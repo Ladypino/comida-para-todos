@@ -25,9 +25,9 @@ function DonateFood ()  {
 			<div className='containerBannerForm'>
           <img src={banner} className='bannerForm' />
         </div>
-				<h1 className='title marginTopForm'><span>¿Cómo funciona?</span></h1>
+				<h2 className='marginTopForm'>¿Cómo funciona?</h2>
 				<p className='text'>Nos juntamos con Empresas Amigas que tienen servicios de delivery a tu hogar, para poder aprovechar su transporte y rescatar alimentos que puedan perderse en tu despensa.</p>
-				<h1><span className='title'>¿Cómo puedo ayudar?</span></h1>
+				<h2>¿Cómo puedo ayudar?</h2>
 				<p className='text'>Con tu número de pedido en Empresas Amigas, puedes inscribir alimentos para donar y que éstos sean recogidos cuando lleven tu envío.</p>
 			</div>
 			<form className='formHuertasSection' onSubmit={handleSubmit(enviarDatos)}>

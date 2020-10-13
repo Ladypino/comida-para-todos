@@ -24,10 +24,10 @@ const DonateEducation = () => {
         <div className='containerBannerForm'>
           <img src={banner} className='bannerForm' />
         </div>
-        <h1 className='title marginTopForm'><span>¿Cómo funciona?</span></h1>
+        <h2 className='marginTopForm'>¿Cómo funciona?</h2>
         <p className='text'>Regalar conocimiento es otorgar herramientas de superación, atrévete a capacitar a beneficiarios de nuestra red.</p>
         <br />
-        <h1 className='title'><span>¿Cómo puedo ayudar?</span></h1>
+        <h2>¿Cómo puedo ayudar?</h2>
         <p className='text'>Piensa en ese tema en que eres experto y cómo podría favorecer a la comunidad, cuéntanos tu disponibilidad y planeemos unas clases.</p>
       </div>
       <form className='formHuertasSection' onSubmit={handleSubmit(enviarDatos)}>

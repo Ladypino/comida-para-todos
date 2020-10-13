@@ -1,5 +1,5 @@
 .carro{
-  width: 100%;
+  width: auto;
   margin: 2.5rem auto;
 }
 
@@ -19,4 +19,15 @@
   text-align: center;
   background: white;
   padding: 10px;
+}
+
+.carousel .slider-wrapper {
+  overflow: hidden;
+  margin: auto;
+  width: 23rem;
+  height:16rem;
+  transition: height .15s ease-in;
+}
+.carousel .control-dots .dot{
+  display:none;
 }

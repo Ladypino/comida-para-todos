@@ -43,6 +43,10 @@
   margin: 22px 0px 32px 0px;
   align-self: center;
 }
+.btnSubmitForm:hover{
+  background: #FD4C00;
+  color:white;
+}
 .erorsText{
   color:red;
   font-size:16px;

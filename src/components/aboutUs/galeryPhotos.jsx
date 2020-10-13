@@ -7,7 +7,7 @@ import './styles/galeryPhoto.css';
 function GaleryPhoto() {
   return (
     <div className='sectionGaleryPhotos'>
-      <h1 className='titleGalery'>GALERÍA DE FOTOS</h1>
+      <h1>GALERÍA</h1>
       <Carousel className='carousel' autoPlay showThumbs={false} infiniteLoop={true}>
         <div className='carouselContainer'>
           <img className='imgGalery' alt="photo" src={foto} />

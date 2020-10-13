@@ -1,8 +1,9 @@
 .sectionTeam{
     display:flex;
     flex-flow: column nowrap;
-    margin:30px 16px 0px 16px;
+    padding:30px 16px 0px 16px;
     text-align: center;
+    background: #F4F4F4 ;
 }
 .textTeam{
     font-size: 16px;
@@ -37,8 +38,6 @@
   object-fit: cover;
 }
 .titleTeam{
-    font-size: 16px;
-    height: 24px;
     margin-bottom: 16px;
     text-align: left;
 }

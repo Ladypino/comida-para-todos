@@ -3,9 +3,7 @@
     flex-flow: column nowrap;
     margin:30px 16px 0px 16px;
 }
-.titleWhatWedo{
-    font-size: 16px;
-}
+
 .containerScheme{
     display: flex;
     margin-top: 16px;

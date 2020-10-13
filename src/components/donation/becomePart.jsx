@@ -24,7 +24,7 @@ function BecomePart() {
 		
 		<div className='sectionBecomePart'>
 			
-			<h1 className='title'>¡HAZTE PARTE!</h1>
+			<h1 className='titleBecome'>¡HAZTE PARTE!</h1>
 			<p className='textbecomepart'>En Comida para todos queremos llevar almuerzos nutritivos a comunidades vulnerables, pero más aún queremos<strong> otorgar herramientas y crear redes</strong> que les permitan proteger su propia seguridad alimentaria en el futuro.</p>
 			<BtnModal showModal={openModalPre} />
             

@@ -6,7 +6,7 @@ import scheme from '../../img/AboutUs/scheme.png';
 function WhatWeDo() {
 	return (
 		<div className='sectionWhatWeDo'>
-			<h1 className='titleWhatWedo'>QUÉ HACEMOS</h1>
+			<h1>QUÉ HACEMOS</h1>
 			<p className='text'>Con tu donación ponemos en marcha un sistema donde<strong> todas las partes interactúan, creando una red de apoyo</strong> que permite generar empleo y recursos, para favorecer un modelo circular que pueda auto-sustentarse.</p>
 			<div className='containerScheme'>
 				<img className='scheme' src={scheme} alt='scheme'/>

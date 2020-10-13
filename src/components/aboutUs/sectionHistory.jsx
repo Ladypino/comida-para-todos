@@ -4,7 +4,7 @@ import './styles/sectionHistory.css';
 function History() {
   return (
     <div className='sectionHistory'>
-      <h1 className='titles'>HISTORIA</h1>
+      <h1>HISTORIA</h1>
       <p className='text'>Nacemos en mayo de este año 2020 con la misión de<strong> combatir la creciente amenaza del hambre,</strong> que afecta a los sectores más vulnerados del país dada la actual crisis sanitaria por COVID-19.
       <br/>
       <br/>

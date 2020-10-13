@@ -1,4 +1,4 @@
-import React, { Fragment} from "react";
+import React, { Fragment } from "react";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import a from '../../img/Landing/Alianzas/28.jpg';
@@ -33,9 +33,10 @@ import "./styles/activitySectionF.css";
 
 const ActivitySectionF = () => {
   return (
-      <Fragment>
-
+    <Fragment>
+      
     <div className="containerActivitySection">
+<<<<<<< HEAD
     <div className='textActivitySection'>
     <strong>Actividad Resiente</strong>
 {""}
@@ -133,9 +134,105 @@ const ActivitySectionF = () => {
         <div className='eachColab'>
           <img className='imgActivity' src={ll} alt='lata'/>
         </div>
+=======
+      
+        <h1 className='titleActSec'>ACTIVIDAD RECIENTE</h1>
+        {""}
+        <div className='footerframe'>
+        <iframe className='instagram-media-instagram-media-rendered' src="https://www.powr.io/instagram-feed/u/c349a139_1602450916#platform=embed" ></iframe> 
+        </div>
+  <p className='bottomTextInsta'>hace 5 días en @comida_para_todos_cl </p>
+      <div className = 'h2Carrousel'>
+        <h1 className='titleActSecs'>NUESTROS COLABORADORES</h1>
+        </div>
+        <Carousel autoPlay showThumbs={false} infiniteLoop={true}>
+          <div className='eachColab'>
+            <img className='imgActivity' src={a} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={b} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={c} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={d} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={d} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={f} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={g} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={h} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={i} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={j} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={k} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={l} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={m} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={n} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={o} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={p} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={q} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={r} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={s} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={t} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={d} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={v} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={d} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={x} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={y} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={z} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={ch} alt='lata' />
+          </div>
+          <div className='eachColab'>
+            <img className='imgActivity' src={ll} alt='lata' />
+          </div>
+>>>>>>> 982a234f8611eaa17a640716e5254f51d02f3ead
         </Carousel>
-    </div>
- 
+      </div>
     </Fragment>
   );
 };

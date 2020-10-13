@@ -9,7 +9,7 @@ const motivationSectionF = () => {
   return (
     <Fragment>
       <div className="textMotivacionSection">
-        <strong>NUESTRA MOTIVACION</strong>
+        <h1>NUESTRA MOTIVACIÓN</h1>
       </div>
       <div className="containerMotivation">
         <div className="eachMotivation">

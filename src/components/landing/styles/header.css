@@ -20,3 +20,9 @@
   width: 100%;
 }
 
+@media screen and (min-width:1024px){
+  .header{
+    background: rgba(244, 244, 244, 0.3);
+  }
+}
+

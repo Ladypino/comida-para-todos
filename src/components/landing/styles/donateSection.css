@@ -6,9 +6,11 @@
 .singleContainerDonate{
     display: inline-block;
     align-self: center;
+    justify-content: center;
     position: relative;
     text-align: center;
-    
+    background-color: #F4F4F4 ;
+    margin-left: 120px;
 }
 .textDonateSectionPage{
     margin:16px 16px;
@@ -17,7 +19,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     background-color:#F4F4F4;
     height: 377px;
 }
@@ -37,6 +39,7 @@
 }
 .imgDonate{
     opacity: 70%;
+    object-fit: cover;
 }
 .imgDonate2{
     border: none;
@@ -85,8 +88,11 @@
     margin-right: 16px;
 }
 
-h2{
-    margin:0px 0px 24px 0px;
+h3{
+    padding:0px 0px 24px 0px;
+    font-size:20px;
+    background-color: #F4F4F4 ;
+    margin-left: 16px;
 }
 .titledonatesection{
     margin-top:6px;
@@ -94,6 +100,9 @@ h2{
 .moretext{
     width: 341.95px;
     height: 76px;
+    background: #F4F4F4 ;
+    margin-left: 16px;
+    margin-bottom: 32px;
 }
 .textBtnDonate, .textBtnDonates{
     position: absolute;
@@ -101,7 +110,15 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
+    font-weight: 900;
 }
 .textBtnDonates{
    top:40%;
+}
+.containerDonateSectionBackground{
+    background-color: #F4F4F4 ;
+}
+.titleLanding{
+    margin-left:16px;
+    margin-bottom: 48px;
 }

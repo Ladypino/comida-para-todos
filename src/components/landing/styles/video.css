@@ -2,3 +2,10 @@
   padding-top: 88px;
   width:100%;
 } 
+
+@media screen and (min-width:1024px){
+  .videoHome{
+    padding-top:0px;
+
+  }
+}
