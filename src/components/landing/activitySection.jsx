@@ -47,6 +47,7 @@ const ActivitySectionF = () => {
         <h1 className='titleActSecs'>NUESTROS COLABORADORES</h1>
         </div>
         <Carousel autoPlay showThumbs={false} infiniteLoop={true}>
+        <p className="carousel-status">14 of 29</p>
           <div className='eachColab'>
             <img className='imgActivity' src={a} alt='lata' />
           </div>

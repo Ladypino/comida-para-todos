@@ -23,12 +23,12 @@ const DespensaDataSource = {
   
   /* funcion para traer Despensa */
 
- /*  store: {
+   store: {
     type: 'odata',
     url: 'https://js.devexpress.com/Demos/DevAV/odata/Products'
   },
   select: ['Product_ID', 'Product_Name', 'Product_Consumer_Rating', 'Product_Category'],
-  filter: ['Product_ID', '<', 10] */
+  filter: ['Product_ID', '<', 10] 
 };
 
 class IntranetDataExport extends React.Component {

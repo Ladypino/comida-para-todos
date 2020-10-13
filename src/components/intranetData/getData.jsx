@@ -3,7 +3,7 @@ import { firebase } from '../../firebase';
 import './styles/getData.css';
 import DataGridDemo from './intranetTable';
 import { DataGrid } from '@material-ui/data-grid';
-
+import IntranetDataExport  from './intranetDataExport'
 const GetData = () => {
   const [showTable, setShowTable] = useState([])
 
@@ -75,7 +75,7 @@ const GetData = () => {
 
   return (
     <Fragment>  
-        
+      
       <div className='contentIntranetForms'>
         <div className='textIntranetForms'>
           <h1 className='titleIntranetForms'>¡Bienvenido!</h1>
@@ -91,7 +91,7 @@ const GetData = () => {
       {/* <div className ='tableIntra'>
         {showTable[0]}
       </div> */}
-
+      <IntranetDataExport/>
       {
             showTable.map(arrayData => (
                
