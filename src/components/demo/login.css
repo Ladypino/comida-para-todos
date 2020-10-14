@@ -16,7 +16,7 @@
 }
 
 .titleIntranet, .textintranet{
-    text-align: center;
+    text-align: start;
     font-size: 16px;
 }
 
@@ -90,7 +90,7 @@
         margin-bottom: 56px;
     }
     .titleIntranet, .textintranet{
-        text-align: center;
+        text-align: start;
         font-size: 18px;
         width: 311px;
     }

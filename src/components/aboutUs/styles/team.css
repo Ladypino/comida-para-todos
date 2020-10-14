@@ -40,7 +40,7 @@
 }
 .titleTeam{
     margin-bottom: 16px;
-    text-align: left;
+    text-align: start;
 }
 
 @media screen and (min-width:1024px){

@@ -16,9 +16,10 @@
 }
 .titleFormsFood,.titleFormsCheckboxFood{
   font-size:16px;
-  text-align: left;
+  text-align: start;
   margin:16px 0px 16px 0px;
 }
+
 .sectionTitleTextFood{
   display:flex;
   flex-flow:column nowrap;
@@ -35,7 +36,7 @@
 
 .titleForms,.titleFormsCheckbox{
   font-size:16px;
-  text-align: left;
+  text-align: start;
   margin:16px 0px 16px 0px;
 }
 .erorsText{
@@ -46,14 +47,17 @@
 .textandCheckboxFood{
   display:flex;
   flex-flow:row wrap;
-  text-align: left;
+  text-align: start;
+  width: 343px;
+  height: 100px;
+  margin-bottom: 26px;
 }
 .formCheckbox{
   margin:0px 24px 0px 0px;
 }
 .titleFormsCheckboxFood{
-  width:287px;
-  height:38px;
+  width: 287px;
+  height: 38px;
 }
 .containerBannerFormFood{
   display: flex;
@@ -134,7 +138,7 @@ margin:0px 161px 109px 161px;
     font-size: 22px;
   }
 .titleFormsFood, .titleFormsCheckboxFood{
-    text-align: left;
+    text-align: start;
     margin:16px 0px 16px 0px;
   }
 }

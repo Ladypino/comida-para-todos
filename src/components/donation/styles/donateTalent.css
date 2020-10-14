@@ -40,7 +40,9 @@
 }
 .inputTextFormTalent{
     height: 80px;
+    padding: 16px 16px 26px 16px;
 }
+
 .btnTalent{
     width: 343px;
     height: 40px;

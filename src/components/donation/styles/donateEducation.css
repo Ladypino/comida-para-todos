@@ -22,7 +22,7 @@
 }
 .titleFormsEducation{
     font-size:16px;
-    text-align: left;
+    text-align: start;
     margin:16px 0px 16px 0px;
 }
 
@@ -107,7 +107,7 @@
       
     }
     .titleFormsEducation{
-        text-align: left;
+        text-align: start;
         margin:16px 0px 16px 0px;
     }
 }

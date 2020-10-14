@@ -133,7 +133,7 @@ function DonateFood() {
           </span>
         </div>
 				<div className='textandCheckboxFood'>
-					<p className='titleFormsCheckboxFood'><input
+					<p className='titleFormsCheckboxFood'><input  className='formCheckbox'
 						name="helpFood"
 						type="checkbox"
 						value={true}
@@ -147,7 +147,7 @@ function DonateFood() {
 					/> Quiero donar alimentos para ser trasladados por Empresas Amigas </p>
 				</div>
 				<div>
-					<p className='titleFormsCheckboxFood'>¿Con qué Empresa Amiga agendaste tu pedido?</p>
+					<p className='titleFormsFood'>¿Con qué Empresa Amiga agendaste tu pedido?</p>
 					<select className='selectFormFood'
 						name="empresa"
 						ref={
@@ -179,7 +179,7 @@ function DonateFood() {
 					</span>
 				</div>
 				<div>
-					<p className='titleFormsCheckbox'>Describe los alimentos y cantidades a donar para asegurarles un lugar dentro del transporte</p>
+					<p className='titleFormsFood'>Describe los alimentos y cantidades a donar para asegurarles un lugar dentro del transporte</p>
 					<input className='textareaSection'
 						name="detalle"
 						ref={
