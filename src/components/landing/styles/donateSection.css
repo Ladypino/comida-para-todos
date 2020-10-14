@@ -25,7 +25,6 @@
     background-color:#F4F4F4;
     height: 377px;
 }
-
 .eachDonateContainer{
     position: relative;
     display: inline-block;
@@ -40,10 +39,10 @@
     border-radius:50%;
     height:117px;
     width:117px;
-    border: 3px solid #929292; 
+    border: 3px solid #929292;
 }
 .imgDonate{
-    opacity: 70%;
+    opacity: 0.7;
     object-fit: cover;
 }
 .imgDonate2{
