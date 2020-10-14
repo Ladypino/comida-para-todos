@@ -1,14 +1,8 @@
 import React, { Fragment, useState} from 'react';
 import { firebase } from '../../firebase';
 import './styles/getData.css';
-<<<<<<< HEAD
-import DataGridDemo from './intranetTable';
-import { DataGrid } from '@material-ui/data-grid';
-import IntranetDataExport  from './intranetDataExport'
-=======
 import IntranetDataExport from './intranetDataExport'
 
->>>>>>> 70f0dae5c5c2fe77bdec304ae303038b891e7a2c
 const GetData = () => {
   const [dataHuerta, setDataHuerta] = useState(null)
   const [dataEducacion, setDataEducacion] = useState(null)
@@ -48,31 +42,7 @@ const GetData = () => {
           <button onClick={handleShow} className='btnsIntranetForms' >MOSTRAR</button>
         </div>
       </div>
-<<<<<<< HEAD
-      {/* <div className ='tableIntra'>
-        {showTable[0]}
-      </div> */}
-      <IntranetDataExport/>
-      {
-            showTable.map(arrayData => (
-               
-                 <div className="list-group-item" key={arrayData.data.id}>
-                  <div className="box">
-                     <p>{arrayData.data.nombre}</p>
-                       </div>
-                     <div className="box">
-                       <p>{arrayData.data.correo}</p>
-                      </div>
-                      <div className="box">
-                       <p>{arrayData.data.comuna}</p>
-                      </div>
-                      </div>
-                     ))
-                }
-                  
-=======
       <IntranetDataExport dataHuerta={dataHuerta} dataEducacion={dataEducacion} dataDespensa={dataDespensa} dataTalento={dataTalento} />
->>>>>>> 70f0dae5c5c2fe77bdec304ae303038b891e7a2c
     </Fragment>
   );
 }

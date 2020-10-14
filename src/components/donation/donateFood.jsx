@@ -129,13 +129,8 @@ function DonateFood() {
 					/> Quiero donar alimentos para ser trasladados por Empresas Amigas </p>
 				</div>
 				<div>
-<<<<<<< HEAD
-				<p className='titleFormsCheckbox'>¿Con qué Empresa Amiga agendaste tu pedido?</p>
-					<select className='select'
-=======
 					<p className='titleFormsCheckboxFood'>¿Con qué Empresa Amiga agendaste tu pedido?</p>
 					<select className='selectFormFood'
->>>>>>> 70f0dae5c5c2fe77bdec304ae303038b891e7a2c
 						name="empresa"
 						ref={
 							register({

@@ -8,32 +8,6 @@ import saveAs from 'file-saver';
 import { exportDataGrid } from 'devextreme/excel_exporter';
 import 'devextreme/data/odata/store';
 
-<<<<<<< HEAD
-const HuertasDataSource = { 
-  
-  // funcion para traer data huerta
-
-  /* store: {
-    type: 'odata',
-    url: 'https://js.devexpress.com/Demos/DevAV/odata/Products'
-  },
-  select: ['Product_ID', 'Product_Name', 'Product_Sale_Price', 'Product_Retail_Price'],
-  filter: ['Product_ID', '<', 10] */
-};
-const DespensaDataSource = {
-  
-  /* funcion para traer Despensa */
-
-   store: {
-    type: 'odata',
-    url: 'https://js.devexpress.com/Demos/DevAV/odata/Products'
-  },
-  select: ['Product_ID', 'Product_Name', 'Product_Consumer_Rating', 'Product_Category'],
-  filter: ['Product_ID', '<', 10] 
-};
-=======
-
->>>>>>> 70f0dae5c5c2fe77bdec304ae303038b891e7a2c
 
 class IntranetDataExport extends React.Component {
   constructor(props) {
