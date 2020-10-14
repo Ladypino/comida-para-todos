@@ -12,3 +12,17 @@
     height: 346.49px;
     object-fit: cover;
 }
+
+
+@media screen and (min-width:1024px){
+    .sectionTransparency{
+        margin:143px 80px 51px 80px;
+    }
+    .containerTransparency{
+        margin-top: 36px;
+    }
+    .graphic{
+        width: 624px;
+        height: 646px;
+    }
+}

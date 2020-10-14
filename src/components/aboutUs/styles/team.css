@@ -41,3 +41,28 @@
     margin-bottom: 16px;
     text-align: left;
 }
+
+@media screen and (min-width:1024px){
+    .sectionTeam{
+        padding:30px 80px 15px 80px;
+    }
+    .textTeam{
+        font-size: 18px;
+        margin-top: 24px;
+    }
+    .containerTeam{
+        margin-top: 32px;
+    }
+    .eachTeamMate{
+        margin:0px 80px 54px 0px;
+        width: 184.3px;
+        height: 234px;
+    }
+    .containerPhotoTeam{
+        width: 144px;
+        height: 144px;
+    }
+    .titleTeam{
+        font-size: 30px;
+    }
+}

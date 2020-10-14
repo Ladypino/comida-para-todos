@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { firebase } from '../../firebase';
 import logo from '../../img/logo.png';
 import './login.css';
+import imge from '../../img/Landing/Donar/almuerzo2.jpg';
 
 const Login = () => {
 
@@ -13,7 +14,11 @@ const Login = () => {
   }
 
   return (
-    <div className='authPageContent'>
+    <div className='containertwodivs'>
+      <div className='containerImgLogin'>
+        <img className='imgLogIn' src={imge} alt='img'/>
+      </div>
+      <div className='authPageContent'> 
       <div className='logoContainer'>
         <img src={logo} className="logoFooter" alt="logo" />
       </div>
@@ -45,6 +50,8 @@ const Login = () => {
         </form>
       </div>
     </div>
+    </div>
+    
   );
 
 

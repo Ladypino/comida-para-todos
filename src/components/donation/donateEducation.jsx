@@ -1,12 +1,15 @@
 import React, { Fragment, useState } from 'react';
 import { useForm } from 'react-hook-form';
-// import './styles/donateHuertas.css'
+import './styles/donateEducation.css'
 import { firebase } from '../../firebase';
 import banner from '../../img/Landing/Donar/educacion.jpg'
+import MainSelector from "../../modules/MainSelector";
+
 
 const DonateEducation = () => {
   const { register, errors, handleSubmit } = useForm()
   const [formEducation, setFormEducation] = useState([]);
+
   const db = firebase.firestore();
 
   const enviarDatos = (data, event) => {
@@ -20,35 +23,72 @@ const DonateEducation = () => {
 
   return (
     <Fragment>
-      <div className='sectionTitleText'>
-        <div className='containerBannerForm'>
+      <div className='sectionTitleTextEducation'>
+        <div className='containerBannerFormEducation'>
           <img src={banner} className='bannerForm' />
         </div>
-        <h2 className='marginTopForm'>¿Cómo funciona?</h2>
-        <p className='text'>Regalar conocimiento es otorgar herramientas de superación, atrévete a capacitar a beneficiarios de nuestra red.</p>
+        <h2 className='marginTopFormEducation'>¿Cómo funciona?</h2>
+        <p className='textEducation'>Regalar conocimiento es otorgar herramientas de superación, atrévete a capacitar a beneficiarios de nuestra red.</p>
         <br />
-        <h2>¿Cómo puedo ayudar?</h2>
-        <p className='text'>Piensa en ese tema en que eres experto y cómo podría favorecer a la comunidad, cuéntanos tu disponibilidad y planeemos unas clases.</p>
+        <h2 className='marginTopFormEducation2'>¿Cómo puedo ayudar?</h2>
+        <p className='textEducation'>Piensa en ese tema en que eres experto y cómo podría favorecer a la comunidad, cuéntanos tu disponibilidad y planeemos unas clases.</p>
       </div>
-      <form className='formHuertasSection' onSubmit={handleSubmit(enviarDatos)}>
-        <p className='titleForms'>Nombre completo</p>
-        <input
-          className='inputsFormHuertas'
-          name="nombreCompleto"
-          ref={
-            register({
-              required: { value: true, message: 'Ingrese su nombre' }
-            })
-          }
-          placeholder="Ej. Juan Pérez Abarca"
-        />
-        <span className='erorsText'>
-          {errors?.nombreCompleto?.message}
-        </span>
+      <form className='formHuertasSectionEducation' onSubmit={handleSubmit(enviarDatos)}>
         <div>
-          <p className='titleForms'>Selecciona tu región</p>
+          <p className='titleFormsEducation'>Nombre completo</p>
+          <input
+            className='inputsFormEducation'
+            name="nombreCompleto"
+            ref={
+              register({
+                required: { value: true, message: 'Ingrese su nombre' }
+              })
+            }
+            placeholder="Ej. Juan Pérez Abarca"
+          />
+          <span className='erorsText'>
+            {errors?.nombreCompleto?.message}
+          </span>
+        </div>
+        <div>
+          <p className='titleFormsEducation'>Déjanos tu correo</p>
+          <input
+            className='inputsFormEducation'
+            name="correo"
+            type="email"
+            ref={
+              register({
+                required: { value: true, message: 'Ingrese su correo electronico' }
+              })
+            }
+            placeholder="Ej. juanperez@mail.com"
+          />
+          <span className='erorsText'>
+            {errors?.correo?.message}
+          </span>
+        </div>
+        <div>
+          <p className='titleFormsEducation'>Número de contacto</p>
+          <input
+            className='inputsFormEducation'
+            name="numeroTelefonico"
+            ref={
+              register({
+                required: { value: true, message: 'Ingrese su número telefónico' },
+                maxLength: { value: 12, message: 'Ingrese un número válido' },
+                minLength: { value: 12, message: 'Ingrese un número válido' },
+              })
+            }
+            placeholder="+569XXXXXXXX"
+          />
+          <span className='erorsText'>
+            {errors?.numeroTelefonico?.message}
+          </span>
+        </div>
+        <div>
+          <p className='titleFormsEducation'>Selecciona tu región</p>
           <select
-            className='selectFormHuertas'
+            className='selectFormEducation'
             name="region"
             ref={
               register({
@@ -65,44 +105,9 @@ const DonateEducation = () => {
           </span>
         </div>
         <div>
-          <p className='titleForms'>Déjanos tu correo</p>
-          <input
-            className='inputsFormHuertas'
-            name="correo"
-            type="email"
-            ref={
-              register({
-                required: { value: true, message: 'Ingrese su correo electronico' }
-              })
-            }
-            placeholder="Ej. juanperez@mail.com"
-          />
-        </div>
-        <span className='erorsText'>
-          {errors?.correo?.message}
-        </span>
-        <div>
-          <p className='titleForms'>Número de contacto</p>
-          <input
-            className='inputsFormHuertas'
-            name="numeroTelefonico"
-            ref={
-              register({
-                required: { value: true, message: 'Ingrese su número telefónico' },
-                maxLength: { value: 12, message: 'Ingrese un número válido' },
-                minLength: { value: 12, message: 'Ingrese un número válido' },
-              })
-            }
-            placeholder="+569XXXXXXXX"
-          />
-          <span className='erorsText'>
-            {errors?.numeroTelefonico?.message}
-          </span>
-        </div>
-        <div>
-          <p className='titleForms'>¿En qué comuna te encuentras?</p>
+          <p className='titleFormsEducation'>¿En qué comuna te encuentras?</p>
           <select
-            className='selectFormHuertas'
+            className='selectFormEducation'
             name="comuna"
             ref={
               register({
@@ -118,9 +123,9 @@ const DonateEducation = () => {
           </span>
         </div>
         <div>
-          <p className='titleForms'>¿En qué te gustaria ofrecer capacitación?</p>
+          <p className='titleFormsEducation'>¿En qué te gustaria ofrecer capacitación?</p>
           <input
-            className='inputsFormHuertas'
+            className='inputsFormEducation'
             name="capacitacion"
             ref={
               register({
@@ -134,9 +139,9 @@ const DonateEducation = () => {
           </span>
         </div>
         <div>
-          <p className='titleForms'>¿Cuál es tu disponibilidad horaria?</p>
+          <p className='titleFormsEducation'>¿Cuál es tu disponibilidad horaria?</p>
           <input
-            className='inputsFormHuertas'
+            className='inputsFormEducation'
             name="horario"
             ref={
               register({
@@ -150,7 +155,7 @@ const DonateEducation = () => {
           </span>
         </div>
         <div>
-          <p className='titleForms'>Coméntanos si requieres materiales para los asistentes, espacio físico desde el cual
+          <p className='titleFormsEducation'>Coméntanos si requieres materiales para los asistentes, espacio físico desde el cual
           capacitar u otros detalles importantes</p>
           <textarea
             className='textareaSection'
@@ -166,9 +171,8 @@ const DonateEducation = () => {
             {errors?.detalle?.message}
           </span>
         </div>
-        <button className='btnSubmitForm' type="submit">ENVIAR FORMULARIO</button>
+        <button className='btnEducation' type="submit">ENVIAR FORMULARIO</button>
       </form>
-
     </Fragment>
   );
 

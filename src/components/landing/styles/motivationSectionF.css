@@ -2,7 +2,6 @@
     display: flex;
     flex-flow: column nowrap;
     margin: 16px 16px;
- 
 }
 
 .containerMotivation{
@@ -12,7 +11,6 @@
     margin: 1.5rem auto;
 
 }
-
 .eachMotivation{
     display: flex;
     flex-direction: column;
@@ -27,4 +25,29 @@
     margin: 0.5rem auto;
     width: 158.95px;
     height: 72px;
+}
+
+@media screen and (min-width:1024px){
+    .textMotivacionSection{
+        font-size: 30px;
+        margin:40px 0px 40px 80px;
+    }
+    .descriptionMotivation{
+        font-size: 22px;
+        width: 83%;
+        margin:36px 0px 0px 0px;
+        width: 203px;
+        height: 104px;
+    }
+    .containerMotivation{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .imgDonate2{
+        width: 128px;
+        height: 128px;
+    }
+
 }

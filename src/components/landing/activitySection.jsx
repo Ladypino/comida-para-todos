@@ -34,17 +34,16 @@ import "./styles/activitySectionF.css";
 const ActivitySectionF = () => {
   return (
     <Fragment>
-      
-    <div className="containerActivitySection">
-      
+      <div className="containerActivitySection">
+
         <h1 className='titleActSec'>ACTIVIDAD RECIENTE</h1>
         {""}
         <div className='footerframe'>
-        <iframe className='instagram-media-instagram-media-rendered' src="https://www.powr.io/instagram-feed/u/c349a139_1602450916#platform=embed" ></iframe> 
+          <iframe className='instagram-media-instagram-media-rendered' src="https://www.powr.io/instagram-feed/u/c349a139_1602450916#platform=embed" ></iframe>
         </div>
-  <p className='bottomTextInsta'>hace 5 días en @comida_para_todos_cl </p>
-      <div className = 'h2Carrousel'>
-        <h1 className='titleActSecs'>NUESTROS COLABORADORES</h1>
+        <p className='bottomTextInsta'>hace 5 días en @comida_para_todos_cl </p>
+        <div className='h2Carrousel'>
+          <h1 className='titleActSecs'>NUESTROS COLABORADORES</h1>
         </div>
         <Carousel autoPlay showThumbs={false} infiniteLoop={true}>
         <p className="carousel-status">14 of 29</p>

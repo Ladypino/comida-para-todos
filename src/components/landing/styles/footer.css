@@ -38,3 +38,32 @@ footer{
   display: flex;
   flex-flow: row nowrap;
 }
+
+
+
+@media screen and (min-width:1024px){
+  footer{
+    height: 214px;
+    width: 100%;
+    bottom: 0px;
+    /* padding: 0px 28px 0px 16px; */
+  }
+  .containerLogoFooter{
+    width: 140px;
+    height: 151.28px;
+    margin-left: 101px;
+  }
+  .containerIconsTextFooter{
+    margin-left: 833px;
+  }
+  .textFooter{
+    margin-left: 34px;
+    font-size: 20px;
+  }
+  .iconFooter{
+    width: 38px;
+  } 
+ 
+
+
+}

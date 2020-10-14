@@ -1,71 +1,36 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState} from 'react';
 import { firebase } from '../../firebase';
 import './styles/getData.css';
+<<<<<<< HEAD
 import DataGridDemo from './intranetTable';
 import { DataGrid } from '@material-ui/data-grid';
 import IntranetDataExport  from './intranetDataExport'
-const GetData = () => {
-  const [showTable, setShowTable] = useState([])
+=======
+import IntranetDataExport from './intranetDataExport'
 
-  const handleFoodShow = () => {
+>>>>>>> 70f0dae5c5c2fe77bdec304ae303038b891e7a2c
+const GetData = () => {
+  const [dataHuerta, setDataHuerta] = useState(null)
+  const [dataEducacion, setDataEducacion] = useState(null)
+  const [dataDespensa, setDataDespensa] = useState(null)
+  const [dataTalento, setDataTalento] = useState(null)
+
+  const handleShow = () => {
     const obtenerDatos = async () => {
       const db = firebase.firestore()
       try {
-        const data = await db.collection('Despensa').get()
-        const arrayData = data.docs.map(doc => (doc.data()))
-        setShowTable(arrayData)
-        console.log(arrayData[0].data.nombre)
-        // const columns = [
-        //   { field: showTable[0].data.nombre, headerName: 'ID', width: 70 },
-        //   { field: 'firstName', headerName: 'First name', width: 130 },
-        //   { field: 'lastName', headerName: 'Last name', width: 130 },
-        //   {
-        //     field: 'age',
-        //     headerName: 'Age',
-        //     type: 'number',
-        //     width: 90,
-        //   },
-        //   // {
-        //   //   field: 'fullName',
-        //   //   headerName: 'Full name',
-        //   //   description: 'This column has a value getter and is not sortable.',
-        //   //   sortable: false,
-        //   //   width: 160,
-        //   //   valueGetter: (params) =>
-        //   //     `${params.getValue('firstName') || ''} ${
-        //   //       params.getValue('lastName') || ''
-        //   //     }`,
-        //   // },
-        // ];
-        
-        // const rows = [
-        //   { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-        //   { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-        //   { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-        //   { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-        //   { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-        //   { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-        //   { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-        //   { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-        //   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
-        // ];
-
-      //   showTable.map(data => (
-                
-      //     <div className="list-group-item" key={data.id}>
-      //     <div className="box">
-      //       <p>{data.nombreCompleto}</p>
-      //       </div>
-      //       <div className="box">
-      //       <p>{data.correo}</p>
-      //       </div>
-      //     </div>
-      //     ))
-      // }
-  
-
-
-
+        const dataHuerta = await db.collection('Huertas').get()
+        const arrayHuerta= dataHuerta.docs.map(doc => (doc.data().data))
+        setDataHuerta(arrayHuerta)
+        const dataEducacion = await db.collection('Educacion').get()
+        const arrayEducacion= dataEducacion.docs.map(doc => (doc.data().data))
+        setDataEducacion(arrayEducacion)
+        const dataDespensa = await db.collection('Despensa').get()
+        const arrayDespensa= dataDespensa.docs.map(doc => (doc.data().data))
+        setDataDespensa(arrayDespensa)
+        const dataTalento = await db.collection('Talento').get()
+        const arrayTalento = dataTalento.docs.map(doc => (doc.data().data))
+        setDataTalento(arrayTalento)
       } catch {
         console.log('error')
       }
@@ -79,15 +44,11 @@ const GetData = () => {
       <div className='contentIntranetForms'>
         <div className='textIntranetForms'>
           <h1 className='titleIntranetForms'>¡Bienvenido!</h1>
-          <p className='paragraphIntranetForms'>Aquí podrás visualizar en forma de tabla los respectivos postulantes, tan solo haciendo click en los botones adyacentes.</p>
-        </div>
-        <div className='btnsIntranetForms'>
-          <button className='archiveBtnOff' >Huerta</button>
-          <button className='archiveBtnOff' >Educación</button>
-          <button className='archiveBtnOff' >Talento</button>
-          <button onClick={handleFoodShow} className='archiveBtnOff' >Despensa</button>
+          <p className='paragraphIntranetForms'>Aquí podrás visualizar en forma de tabla los respectivos postulantes, presiona para mostrar</p>
+          <button onClick={handleShow} className='btnsIntranetForms' >MOSTRAR</button>
         </div>
       </div>
+<<<<<<< HEAD
       {/* <div className ='tableIntra'>
         {showTable[0]}
       </div> */}
@@ -109,6 +70,9 @@ const GetData = () => {
                      ))
                 }
                   
+=======
+      <IntranetDataExport dataHuerta={dataHuerta} dataEducacion={dataEducacion} dataDespensa={dataDespensa} dataTalento={dataTalento} />
+>>>>>>> 70f0dae5c5c2fe77bdec304ae303038b891e7a2c
     </Fragment>
   );
 }

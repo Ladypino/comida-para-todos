@@ -19,7 +19,7 @@
   margin:0px 16px 30px 16px;
 }
 .marginTopForm{
-  margin-top:24px
+  margin-top:24px;
 }
 
 .formHuertasSection{
@@ -65,23 +65,63 @@
   height:38px;
 }
 
-
-/* .container-option-menu {
-  background-color: #b42c41;
-  margin: 5% auto auto 5%;
-  display:flex;
-  width: 45%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-} */
-
 .containerBannerForm{
   display: flex;
   width:100%;
   height: 88px;
-  opacity: 70%;
+  /* opacity: 70%; */
 }
 .bannerForm{
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (min-width:1024px){
+  .sectionTitleText{
+    display:flex;
+    flex-flow:column nowrap;
+    margin:0px 161px 109px 161px;
+  }
+  .containerBannerForm{
+    height: 304px;
+    width: 1575px;
+  }
+  h2, .marginTopForm{
+    margin-top:56px;
+    font-size: 36px;
+  }
+  h2{
+    margin-top: 0px;
+  }
+  .text{
+    width: 512px;
+    height: 197px;
+    font-size: 22px;
+  }
+  .formHuertasSection{
+    position: absolute;
+    right: 236px;
+    top: 1250px;
+    width: 744px;
+  }
+  .titleForms,.titleFormsCheckbox{
+    font-size:74px;
+    text-align: left;
+    margin:16px 0px 16px 0px;
+  }
+  .inputsFormHuertas, .textareaSection, .selectFormHuertas{
+    width: 544px;
+    height: 56px;
+    border-radius: 32px;
+    padding:14px 0px 16px 25px;
+    font-size: 22px;
+  }
+  .btnSubmitForm{
+    position: absolute;
+    width: 544px;
+    right: 200px;
+    height: 64px;
+    top: 1000px;
+}
+  
 }

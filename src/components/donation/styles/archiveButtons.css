@@ -3,14 +3,6 @@
   flex-flow: row nowrap;
   margin:30px 16px 0px 16px;
 }
-/* .containerSectionArchiveBtnAndDonateForms{
-  background-color: #b42c41;
-  margin: 5% auto auto 5%;
-  display:flex;
-  width: 45%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-} */
 .archiveBtnOff{
   width: 25%;
   height: 40px;
@@ -29,4 +21,25 @@
   box-sizing: border-box;
   box-shadow: 2px -3px 4px rgba(0, 0, 0, 0.25);
   border-radius:0px 20px 0px 0px ;
+}
+@media screen and (min-width:1024px){
+  .containerSectionArchiveBtnAndDonateForms{
+    padding-bottom: 550px;
+  }
+  .sectionArchiveButtons{
+    display:flex;
+    flex-flow: row nowrap;
+    margin:30px 161px 33px 161px;
+    justify-content: center;
+  }
+  .archiveBtnOff{
+    width: 50%;
+    height: 62.98px;
+    font-size: 24px;
+  }
+  .archiveBtnOn{
+   font-size: 24px;
+    width: 50%;
+    height: 62.98px;
+  }
 }

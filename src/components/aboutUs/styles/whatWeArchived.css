@@ -1,7 +1,8 @@
 .sectionWhatWeArchived{
     display: flex;
     flex-flow: column nowrap;
-    margin:30px 16px 0px 16px;
+    padding:30px 16px 0px 16px;
+    background: #F4F4F4 ;
 }
 .containerWhatWeArchived{
     display: flex;
@@ -38,4 +39,30 @@
 }
 .title{
     font-size: 16px;
+}
+
+@media screen and (min-width:1024px){
+    .sectionWhatWeArchived{
+        padding:30px 80px 0px 80px;
+    }
+    .containerWhatWeArchived{
+        margin-left: 150px;
+    }
+    .photowahtwearchived{
+        width: 216px;
+        height: 216px;
+    }
+    .containerPhotoText{
+        margin:32px 227px 0px 20px;
+        width: 216px;
+        height: 401px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .textx{
+        margin-top: 56px;
+        font-size: 36px;
+        width: 216px;
+    }
 }

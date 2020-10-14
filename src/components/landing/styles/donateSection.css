@@ -68,7 +68,7 @@
     position: absolute;
 }
 
-.btnDonation{
+.btnDonation, .btnDonations{
     background-color: #fd4c00;
     border:#929292 solid 1px;
     color: white;
@@ -121,4 +121,77 @@ h3{
 .titleLanding{
     margin-left:16px;
     margin-bottom: 48px;
+}
+
+@media screen and (min-width:1024px){
+    .titledonatesection{
+        font-weight: bold;
+        font-size: 36px;
+    }
+    .btnDonation{
+        display: none;
+    }
+    .containerDonateSectionBackground{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    .containerDonates{
+        display:flex;
+        flex-flow: row wrap;
+        height: 136px;
+        position: absolute;
+        left: 900px;
+        top: 1250px;
+    }
+    .btnDonations{
+        width: 432px;
+        height: 48px;
+        margin-left: 60px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .titleLanding{
+        font-size: 26px;
+        margin:24px 0px 27px 80px;
+    }
+    .moretext{
+        font-size: 22px;
+        width: 381px;
+        height: 130px;
+        margin: 0px 0px 27px 80px;
+    }
+    .singleContainerDonate{
+        display:flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        z-index: 2;
+        margin-left: 500px;
+        position: absolute;
+        top: 1250px;
+        left: 216px;
+    }
+    .eachDonateContainer{
+        position: relative;
+        display: inline-block;
+        margin:0px 48px 0px 0px;
+    }
+    .imgDonate{
+        width: 136px;
+        height: 136px;
+    }
+    .iconPlusDonate{
+        width: 48px;
+        height: 48px;
+    }
+    .textBtnDonate, .textBtnDonates{
+        font-size: 18px;
+    }
+    .donateIcon{
+        font-size: 43px;
+    }
+    .textBtnDonates{
+        top:48%;
+     }
 }

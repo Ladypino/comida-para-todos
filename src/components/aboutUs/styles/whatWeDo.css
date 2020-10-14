@@ -1,7 +1,7 @@
 .sectionWhatWeDo{
     display: flex;
     flex-flow: column nowrap;
-    margin:30px 16px 0px 16px;
+    margin:30px 16px 20px 16px;
 }
 
 .containerScheme{
@@ -12,4 +12,30 @@
 }
 .scheme{
     width: 100%;
+}
+.titlesecWhat{
+    margin-bottom: 11px;
+}
+
+@media screen and (min-width:1024px){
+    .sectionWhatWeDo{
+        margin:30px 80px 60px 80px;
+    }
+    .containerScheme{
+        position: absolute;
+        width: 570.33px;
+        height: 619px;
+        left: 1000px;
+        top: 1499px;
+    }
+    .titlesecWhat{
+        font-size: 30px;
+    }
+    .textwhat{
+        margin-top: 34px;
+        font-size: 24px;
+        width: 660px;
+    }
+    
+    
 }
