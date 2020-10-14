@@ -37,7 +37,8 @@ const GetData = () => {
       <div className='contentIntranetForms'>
         <div className='textIntranetForms'>
           <h1 className='titleIntranetForms'>¡Bienvenido!</h1>
-          <p className='paragraphIntranetForms'>Aquí podrás visualizar en forma de tabla los respectivos postulantes, presiona para mostrar</p>
+          <p className='paragraphIntranetForms'>Con el botón “mostrar” podrás traer la data actualizada desde los
+           formularios de voluntariado, para revisarla directamente o exportarla a una plantilla excel.</p>
           <button onClick={handleShow} className='btnsIntranetForms' >MOSTRAR</button>
         </div>
       </div>

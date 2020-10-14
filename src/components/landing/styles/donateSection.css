@@ -15,7 +15,7 @@
     cursor:pointer;
 }
 .textDonateSectionPage{
-    margin:16px 16px;
+    padding:16px 16px;
 }
 .containerDonates{
     display: flex;
@@ -89,8 +89,8 @@
     width: 100%;
 }
 .btnSectionMargin{
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .btnDonation:hover, .btnDonations:hove{
     box-shadow:  0 0 10px 5px #fd4c0069;
@@ -100,16 +100,16 @@ h3{
     padding:0px 0px 24px 0px;
     font-size:20px;
     background-color: #F4F4F4 ;
-    margin-left: 16px;
+    padding-left: 16px;
 }
 .titledonatesection{
-    margin-top:6px;
+    padding-top:6px;
 }
 .moretext{
     width: 341.95px;
     height: 76px;
     background: #F4F4F4 ;
-    margin-left: 16px;
+    padding-left: 16px;
     margin-bottom: 32px;
 }
 .textBtnDonate, .textBtnDonates{
@@ -123,12 +123,15 @@ h3{
 .textBtnDonates{
    top:40%;
 }
+.containerDonateSectionBackgroundOficial{
+    background-color: #F4F4F4 ;
+}
 .containerDonateSectionBackground{
     background-color: #F4F4F4 ;
 }
 .titleLanding{
-    margin-left:16px;
-    margin-bottom: 48px;
+    padding-left:16px;
+    padding-bottom: 48px;
 }
 
 
@@ -137,50 +140,58 @@ h3{
         font-weight: bold;
         font-size: 36px;
     }
+    .containerDonateSectionBackgroundOficial{
+        background-color: #F4F4F4 ;
+        width:100%;
+        margin:0px;
+    }
     .btnDonation{
         display: none;
+    }
+    .containerDonateSectionBackground{
+        background-color: #F4F4F4 ;
+        margin:0px;
     }
     .containerDonateSectionBackground{
         display: flex;
         flex-flow: row nowrap;
         width: 100%;
-        padding-bottom:120px;
+    }
+    .btnsContainer{
+        display:flex;
+        flex-flow:row nowrap;
+        align-items: center;
     }
     .containerDonates{
         display:flex;
         flex-flow: row wrap;
-        height: 136px;
-        position: absolute;
-        left: 900px;
-        top: 1250px;
+        height: auto;
     }
     .btnDonations{
         width: 432px;
         height: 48px;
         margin-left: 60px;
+        margin-top:0px;
     }
     h1{
         font-size: 30px;
     }
     .titleLanding{
         font-size: 26px;
-        margin:24px 0px 27px 80px;
+        padding:24px 0px 27px 80px;
     }
     .moretext{
         font-size: 22px;
         width: 381px;
         height: 130px;
-        margin: 0px 0px 27px 80px;
+        padding: 0px 0px 27px 80px;
     }
     .singleContainerDonate{
         display:flex;
-        justify-content: flex-start;
-        align-self: flex-start;
-        z-index: 2;
-        margin-left: 500px;
-        position: absolute;
-        top: 1250px;
-        left: 216px;
+        height: auto;
+        padding-left:62px;
+        padding-right:46px;
+        margin-left:0px;
     }
     .eachDonateContainer{
         position: relative;

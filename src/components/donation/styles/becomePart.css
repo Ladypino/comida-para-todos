@@ -21,8 +21,9 @@
 @media screen and (min-width:1024px){
   .sectionBecomePart{
     display:flex;
-    flex-flow:column wrap;
+    flex-flow:row nowrap;
     padding-top: 64px;
+    justify-content: space-between;
     margin:0px 161px 64px 161px;
   }
   .textbecomepart{
@@ -35,11 +36,9 @@
     font-size: 30px;
   }
   .textCenter{
-    position: absolute;
     width: 577px; 
     height: 58px;
-    left: 903px;
-    top: 633px;
+  
     font-size: 24px;
   }
 }

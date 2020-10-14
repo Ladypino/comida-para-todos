@@ -31,7 +31,7 @@ const Login = () => {
           >
             Ingresar tu correo </label>
           <input type='email'
-            placeholder='rafael@comidaparatodos.cl'
+            placeholder='hola@comidaparatodos.cl'
             autoComplete='username'
             className='inputIntranet'
             onChange={(e) => setEmail(e.target.value)}

@@ -28,9 +28,9 @@ function Footer() {
           <a className='linkExterno' href='https://goo.gl/maps/Lj7toJ6oe7wzU2jd9' target='_blanck'>
             <img src={maps} alt="mailIcon" className='iconFooter' />
             <p className='textFooter'>Av. Condell #566, Santiago</p>
-            </a>
+          </a>
         </div>
-        </div>
+      </div>
     </footer>
 
   );

@@ -27,3 +27,24 @@
     line-height: 22px;
     margin-top: 24px;
 }
+
+@media screen and (min-width:1024px){
+    .contentIntranetForms{
+        display: flex;
+        flex-flow: column nowrap;
+        padding:34px 16px 0px 16px;
+        background:  #F4F4F4;
+    }
+    .textIntranetForms{
+        margin:0px 56px 0px 56px;
+    }
+    .paragraphIntranetForms{
+        margin-bottom: 32px;
+        font-size:22px;
+    }
+    .btnsIntranetForms{
+        width:264px;
+        height:48px;
+        font-size:22px;
+    }
+}

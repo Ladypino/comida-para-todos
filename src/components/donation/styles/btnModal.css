@@ -35,15 +35,8 @@
 
 @media screen and (min-width:1024px){
     .btn-Modal {
-        position: absolute;
         width: 576px;
         height: 64px;
-        left: 903px;
-        top: 509px;
         font-size: 22px;
     }
-    
-
-
-
 }

@@ -22,7 +22,7 @@ class IntranetDataExport extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className='containerdatatablecosas'>
         <div id="exportContainer">
           <Button
             text="Exportar a planilla excel"

@@ -1,7 +1,7 @@
 .sectionArchiveButtons{
   display:flex;
   flex-flow: row nowrap;
-  margin:30px 16px 0px 16px;
+  margin:30px 16px 10px 16px;
 }
 .archiveBtnOff{
   width: 25%;
@@ -24,6 +24,7 @@
   border-radius:0px 20px 0px 0px ;
   outline:none;
 }
+
 @media screen and (min-width:1024px){
   .containerSectionArchiveBtnAndDonateForms{
     padding-bottom: 550px;
@@ -43,5 +44,9 @@
    font-size: 24px;
     width: 50%;
     height: 62.98px;
+  }
+  .archiveBtnOn:hover, .archiveBtnOff:hover{
+    color:white;
+    background-color: #fd4c00;
   }
 }
