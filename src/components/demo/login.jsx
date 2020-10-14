@@ -29,7 +29,7 @@ const Login = () => {
             placeholder='rafael@comidaparatodos.cl'
             autoComplete='username'
             className='inputIntranet'
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail+setPassword(e.target.value)}
           />
           <label htmlFor='password'
             className='textintranetInput'>Contraseña </label>

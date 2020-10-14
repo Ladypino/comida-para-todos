@@ -25,7 +25,8 @@ const AboutUs = () => {
       <Banner/>
       <History/>
       <Team/>
-      {/* <GaleryPhoto/> */}
+      
+       <GaleryPhoto />
       <WhatWeDo/>
       <WhatWeArchived/>
       <Transparency/>

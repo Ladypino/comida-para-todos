@@ -15,3 +15,4 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export {firebase};
+export {db, auth}
