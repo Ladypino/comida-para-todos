@@ -21,15 +21,16 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin:0px 16px 0px 0px;
+    margin:0px 24px 0px 16px;
     width: 122px;
     height: 193px;
     text-align: center;
+    padding-bottom:24px;
 }
 
 .containerPhotoTeam{
-    height:70px;
-    width:70px;
+    height:120px;
+    width:120px;
     margin-bottom: 10px;
 }
 .photo{
@@ -39,7 +40,7 @@
 }
 .titleTeam{
     margin-bottom: 16px;
-    text-align: left;
+    text-align: start;
 }
 
 @media screen and (min-width:1024px){
@@ -54,7 +55,7 @@
         margin-top: 32px;
     }
     .eachTeamMate{
-        margin:0px 80px 54px 0px;
+        margin:0px 38px 54px 0px;
         width: 184.3px;
         height: 234px;
     }

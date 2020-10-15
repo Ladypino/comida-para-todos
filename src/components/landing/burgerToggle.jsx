@@ -1,9 +1,11 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/burguerToggle.css';
 import { animateScroll as scroll } from 'react-scroll';
 
 const BurguerToggle = (props) => {
+  const scrollQueHacemos= window.screen.width<1024 ? 1620 : 1580;
+  const scrollTransparencia= window.screen.width<1024 ? 3000 : 2720;
 
   const classToogle = props.burgerOn === true ? 'toggleVisible' : 'toggleHidden'
 
@@ -22,7 +24,7 @@ const BurguerToggle = (props) => {
         <Link to="/Nosotros" className='oli'>
           <div className='boxSection'
             onClick={() => {
-              scroll.scrollTo(1620);
+              scroll.scrollTo(scrollQueHacemos);
               props.setBurgerOn(!props.burgerOn)
             }}>
             <p className='textBurgerToggle'>Qué hacemos</p>
@@ -31,7 +33,7 @@ const BurguerToggle = (props) => {
         <Link to="/Nosotros" className='oli'>
           <div className='boxSection'
             onClick={() => {
-              scroll.scrollTo(3000);
+              scroll.scrollTo(scrollTransparencia);
               props.setBurgerOn(!props.burgerOn)
             }}>
             <p className='textBurgerToggle'>Transparencia</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../img/logo.png';
-import '../landing/styles/header.css';
+import './styles/headerIntra.css'
 import IconBurgerToggleIntranet from './iconBurguerToggleIntranet'
 
 const HeaderIntranet = () => {

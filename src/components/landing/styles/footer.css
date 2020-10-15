@@ -12,12 +12,14 @@ footer{
 .containerLogoFooter{
   width:88px;
   margin-left: 16px;
+  cursor:pointer;
 }
 .logoFooter{
   width: 100%;
 }
 .iconFooter{
   width: 24px;
+  cursor:pointer;
 } 
 .containerEachContact{
   display: flex;
@@ -29,6 +31,7 @@ footer{
   margin-left: 16px;
   font-size: 16px;
   color:#FBFBFB;
+  cursor:pointer;
 }
 .containerIconsTextFooter{
   margin-left: 16px;
@@ -37,8 +40,8 @@ footer{
   text-decoration: none;
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
 }
-
 
 
 @media screen and (min-width:1024px){

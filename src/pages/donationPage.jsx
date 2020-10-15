@@ -14,7 +14,7 @@ const DonationPage = () => {
   return (
     <Fragment>
       <Header />
-      <BannerDonation/>
+      <BannerDonation/> 
       <BecomePart />
       <ArchiveButtons />
       <Footer />

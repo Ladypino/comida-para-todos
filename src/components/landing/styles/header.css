@@ -8,12 +8,14 @@
   justify-content:space-between;
   align-items: center;
   z-index: 2;
+
 }
 
 .containerLogoHome{
   width:64px;
   margin-left: 16px;
   /* height: auto; */
+  cursor:pointer;
 }
 
 .logoHome{
@@ -24,6 +26,12 @@
   .header{
     background: rgba(244, 244, 244, 0.3);
     position: absolute;
+    height:136px;
+  }
+  .containerLogoHome{
+    width:97px;
+    margin-left: 48px;
+    height: auto;
   }
 
 }

@@ -16,17 +16,16 @@
 .titlesecWhat{
     margin-bottom: 11px;
 }
+.containerSchemeDesktop{
+    display:none;
+}
 
 @media screen and (min-width:1024px){
     .sectionWhatWeDo{
         margin:30px 80px 60px 80px;
     }
     .containerScheme{
-        position: absolute;
-        width: 570.33px;
-        height: 619px;
-        left: 1000px;
-        top: 1499px;
+        display:none;
     }
     .titlesecWhat{
         font-size: 30px;
@@ -35,6 +34,17 @@
         margin-top: 34px;
         font-size: 24px;
         width: 660px;
+    }
+    .containerSchemeDesktop{
+        display: flex;
+    }
+    .containerResponsiveWhatWeDo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .schemeDesktop{
+        width:600px;
+        object-fit: cover;
     }
     
     

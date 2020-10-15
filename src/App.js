@@ -42,7 +42,7 @@ function App() {
             <AboutUs />
           </ShowContext.Provider>
         </Route>
-        <Route path="/Intranet/Login" exact >
+        <Route path="/Intranet" exact >
           <Login />
         </Route>
         <Route path="/Intranet/Formularios" exact>

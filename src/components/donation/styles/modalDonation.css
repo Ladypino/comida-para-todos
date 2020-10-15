@@ -48,6 +48,8 @@
 }
 .btn-modal:hover{
     border: 1px solid #fd4c00;
+    background: #fd4c00;
+    color:white;
 }
 .logoContainerModal{
     margin-top: 60px;
@@ -58,5 +60,8 @@
 }
 .closeModal{
     align-self: flex-end;
+    font-size:30px;
+    color: #929292;
+    cursor:pointer;
 }
 

@@ -42,15 +42,16 @@
 .btnAuthPage{
     margin-top: 16px;
     font-size: 16px;
-    background: #929292;
+    background: #FD4C00;
     width: 215px;
     height: 40px;
     color:white;
     border-radius: 24px;
     border: none;
+    cursor:pointer;
 }
 .btnAuthPage:hover{
-    background: #FD4C00;
+    box-shadow:  0 0 10px 5px #fd4c0069;
 }
 .inputIntranet{
     width: 215px;
@@ -89,7 +90,6 @@
         margin-bottom: 56px;
     }
     .titleIntranet, .textintranet{
-        text-align: center;
         font-size: 18px;
         width: 311px;
     }
@@ -101,6 +101,7 @@
         margin-bottom: 24px;
     }
     .textintranetInput{
+        font-size:18px;
         margin-bottom: 10.62px;
         margin-top: 32px;
     }
@@ -115,6 +116,7 @@
         height: 40px;
         width: 285px;
         height: 51px;
-        padding:16px 81px 16px 15px;
+        padding:16px 0px 16px 15px;
+        font-size:16px;
     }
 }

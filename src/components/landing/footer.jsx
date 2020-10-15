@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import './styles/footer.css';
 import logo from '../../img/logo.png'
 import Ig from '../../img/Footer/insta.png';
@@ -20,18 +19,18 @@ function Footer() {
           </a>
         </div>
         <div className='containerEachContact'>
-          <a className='linkExterno' href='https://mail.google.com/mail/?view=cm&fs=1&to=rafa.rincon@gastronomia.social' target='_blanck'>
+          <a className='linkExterno' href='https://mail.google.com/mail/?view=cm&fs=1&to=hola@comidaparatodos.cl' target='_blanck'>
             <img src={Mail} alt="mailIcon" className='iconFooter' />
-            <p className='textFooter'>rafa.rincon@gastronomia.social</p>
+            <p className='textFooter'>hola@comidaparatodos.cl</p>
           </a>
         </div>
         <div className='containerEachContact'>
-          <a className='linkExterno' href='https://goo.gl/maps/huAqT7t2g79LgZSb8' target='_blanck'>
+          <a className='linkExterno' href='https://goo.gl/maps/Lj7toJ6oe7wzU2jd9' target='_blanck'>
             <img src={maps} alt="mailIcon" className='iconFooter' />
-            <p className='textFooter'>Dir. calle Lorem #463</p>
-            </a>
+            <p className='textFooter'>Av. Condell #566, Santiago</p>
+          </a>
         </div>
-        </div>
+      </div>
     </footer>
 
   );

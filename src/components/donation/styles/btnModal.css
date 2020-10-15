@@ -17,6 +17,9 @@
     border-radius: 5rem;
     font-size: 1rem;
 }
+.btn-Modal:hover{
+    box-shadow:  0 0 10px 5px #fd4c0069;
+}
 
 .btn-cancel{
     background-color: #ebcc29;
@@ -32,15 +35,8 @@
 
 @media screen and (min-width:1024px){
     .btn-Modal {
-        position: absolute;
         width: 576px;
         height: 64px;
-        left: 903px;
-        top: 509px;
         font-size: 22px;
     }
-    
-
-
-
 }

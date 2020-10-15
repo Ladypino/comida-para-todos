@@ -21,84 +21,84 @@ function Team() {
       <div className='containerTeam'>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={rafa} className='photo'/>
+            <img src={rafa} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Rafael Rincón</p>
           <p>Director Ejecutivo</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={enrique} className='photo'/>
+            <img src={enrique} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Enrique Gellona</p>
           <p>Dir. de Finanzas y Administración</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={seba} className='photo'/>
+            <img src={seba} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Sebastián Gatica</p>
           <p>Dir. de Innovación Social</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={cami} className='photo'/>
+            <img src={cami} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Camila Moreno</p>
           <p>Coord. General</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={take} className='photo'/>
+            <img src={take} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Takehiro Kadena</p>
           <p>Coord. Territorial</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={lou} className='photo'/>
+            <img src={lou} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Louisa Fernández</p>
           <p>Coord. Territorial</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={ale} className='photo'/>
+            <img src={ale} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Alejandra Vidales</p>
           <p>Coord. Social</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={ele} className='photo'/>
+            <img src={ele} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Eleanore Hendersson</p>
           <p>Coord. Voluntariado</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={enzo} className='photo'/>
+            <img src={enzo} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Enzo Lambertini</p>
           <p>Coord. de Administración</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={majo} className='photo'/>
+            <img src={majo} alt="" className='photo'/>
           </div>
           <p className='textTeam'>María José de la Fuente</p>
           <p>Coord. de Proyectos</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={hans} className='photo'/>
+            <img src={hans} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Hans Rautenberg</p>
-          <p>Asesor Estratégico y Financiero</p>
+          <p>As. Estratégico y Financiero</p>
         </div>
         <div className='eachTeamMate'>
           <div className='containerPhotoTeam'>
-            <img src={carlos} className='photo'/>
+            <img src={carlos} alt="" className='photo'/>
           </div>
           <p className='textTeam'>Carlos Román</p>
           <p>Consultor Estratégico</p>

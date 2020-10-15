@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { firebase } from '../../firebase';
 import logo from '../../img/logo.png';
 import './login.css';
-import imge from '../../img/Landing/Donar/almuerzo2.jpg';
+import imge from '../../img/Landing/Donar/almuerzo.jpg';
 
 const Login = () => {
 
@@ -31,7 +31,7 @@ const Login = () => {
           >
             Ingresar tu correo </label>
           <input type='email'
-            placeholder='rafael@comidaparatodos.cl'
+            placeholder='hola@comidaparatodos.cl'
             autoComplete='username'
             className='inputIntranet'
             onChange={(e) => setEmail+setPassword(e.target.value)}

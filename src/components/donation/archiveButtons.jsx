@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import DonateEducation from './donateEducation';
 import DonateHuertas from './donateHuertas';
 import DonateTalent from './donateTalent';
@@ -9,6 +9,8 @@ import { animateScroll as scroll } from 'react-scroll';
 
 
 function ArchiveButtons() {
+
+  const scrollForm = window.screen.width < 1024 ? 390 : 780;
 
   // me traigo valores del contexto
   const { formToShow, positionScrollForm } = useContext(ShowContext);
@@ -40,20 +42,20 @@ function ArchiveButtons() {
         <button className={classButtonArchiveHuerta}
           onClick={() => {
             setFormToShowValue('Huertas');
-            setPositionScrollFormValue(390);
+            setPositionScrollFormValue(scrollForm);
           }}>Huertas</button>
         <button className={classButtonArchiveTalent}
           onClick={() => {
             setFormToShowValue('Talent');
-            setPositionScrollFormValue(390)
+            setPositionScrollFormValue(scrollForm)
           }}>Talento</button>
         <button className={classButtonArchiveFood} onClick={() => {
           setFormToShowValue('Food');
-          setPositionScrollFormValue(390)
+          setPositionScrollFormValue(scrollForm)
         }}>Despensa</button>
         <button className={classButtonArchiveEducation} onClick={() => {
           setFormToShowValue('Education');
-          setPositionScrollFormValue(390);
+          setPositionScrollFormValue(scrollForm);
         }}>Educación</button>
       </div>
       {form}

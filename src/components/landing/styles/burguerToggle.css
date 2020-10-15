@@ -11,7 +11,6 @@
   transition: transform 0.2s ease-in-out;
   
 }
-
 .toggleVisible {
   background-color: white;
   display: flex;
@@ -26,6 +25,7 @@
   box-sizing: border-box;
   transition: transform 0.2s ease-in-out;
   z-index: 3;
+  cursor:pointer;
 }
 
 .textBurgerToggle{
@@ -44,8 +44,6 @@
 .textBurgerToggle:hover{
   color:white;
 }
-
-
 .oli{
   text-decoration: none;
 }
@@ -59,6 +57,9 @@
     transition: none;
     box-sizing: inherit;
     margin-right: 10px;
+    border: none;
+    background: rgba(145, 145, 145, 0.4);
+    top:0px;
   }
   .toggleVisible {
     flex-direction: row;
@@ -66,21 +67,30 @@
     top: 0px;
     right: -1;;
     width: auto;
-    height: auto;
-    border: 2px solid #F4F4F4;
+    height: 15px;
+    border: none;
     box-sizing: border-box;
     transition: none;
     z-index: 3;
     margin-right: 10px;
     color:white;
+    background: rgba(145, 145, 145, 0.4);
   }
   .boxSection{
+    display: flex;
     box-sizing: unset;
-    /* border: none; */
-    padding: 16px 30px 16px 32px;
+    padding:16px;
+    width:150px;
     color:white;
+    background: rgba(145, 145, 145, 0.4);
+    border: none;
+    margin-right: 4px;
+    height:15px;
+    justify-content: center;
+    align-items: center;
   }
   .textBurgerToggle{
+    font-size:20px;
     color: white;
   }
   
