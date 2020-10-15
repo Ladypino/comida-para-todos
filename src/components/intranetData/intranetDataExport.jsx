@@ -33,6 +33,7 @@ class IntranetDataExport extends React.Component {
         <TabPanel id="tabPanel" deferRendering={false}>
           <Item title="HUERTAS">
             <DataGrid id="DataGrid" ref={this.HuertasGridRef} columnAutoWidth={true} dataSource={this.props.dataHuerta} showBorders={true} rowAlternationEnabled={true}>
+              <Column dataField="fecha" caption="Fecha" />  
               <Column dataField="nombreCompleto" caption="Nombre" />
               <Column dataField="correo" caption="Correo" />
               <Column dataField="numeroTelefonico" caption="Telefono"/>
@@ -41,11 +42,12 @@ class IntranetDataExport extends React.Component {
               <Column dataField="ayudarHuerta" caption="Ayudar Huerta"/>
               <Column dataField="donarHuerta" caption="Donar Huerta"/>
               <Column dataField="tamanoTerreno" caption="m2 terreno"/>
-              <Column dataField="detalle" caption="detalles"/>
+              <Column dataField="detalle" caption="Detalles"/>
             </DataGrid>
           </Item>
           <Item title="TALENTO">
             <DataGrid id="DataGrid" ref={this.TalentoGridRef} columnAutoWidth={true} dataSource={this.props.dataTalento} showBorders={true} rowAlternationEnabled={true}>
+              <Column dataField="fecha" caption="Fecha" /> 
               <Column dataField="nombreCompleto" caption="Nombre" />
               <Column dataField="correo" caption="Correo" />
               <Column dataField="numeroTelefonico" caption="Telefono"/>
@@ -58,6 +60,7 @@ class IntranetDataExport extends React.Component {
           </Item>
           <Item title="DESPENSA">
             <DataGrid id="DataGrid" ref={this.DespensaGridRef} columnAutoWidth={true} dataSource={this.props.dataDespensa} showBorders={true} rowAlternationEnabled={true}>
+              <Column dataField="fecha" caption="Fecha" /> 
               <Column dataField="nombreCompleto" caption="Nombre" />
               <Column dataField="correo" caption="Correo" />
               <Column dataField="numeroTelefonico" caption="Telefono"/>
@@ -72,6 +75,7 @@ class IntranetDataExport extends React.Component {
           </Item>
           <Item title="EDUCACION">
             <DataGrid id="DataGrid" ref={this.EducacionGridRef} columnAutoWidth={true} dataSource={this.props.dataEducacion} showBorders={true} rowAlternationEnabled={true}>
+              <Column dataField="fecha" caption="Fecha" /> 
               <Column dataField="nombreCompleto" caption="Nombre" />
               <Column dataField="correo" caption="Correo" />
               <Column dataField="numeroTelefonico" caption="Telefono"/>

@@ -9,13 +9,29 @@ function DonateTalent() {
   const [formTalent, setFormTalent] = useState([]);
   const db = firebase.firestore();
 
+  const currentDate = () => {
+    let date = new Date();
+    const day = date.getDate();
+    const month = (date.getMonth() < 9 ? "0" : "") + (date.getMonth() + 1);
+    const year = date.getFullYear();
+    date = `${day}/${month}/${year}`;
+    return date;
+  };
 
   const datos = (data, e) => {
     setFormTalent([...formTalent, data]);
     e.preventDefault();
     e.target.reset();
     db.collection("Talento").doc(data.nombreCompleto).set({
-      data
+      nombreCompleto: data.nombreCompleto,
+      correo: data.correo,
+      numeroTelefonico: data.numeroTelefonico,
+      region:data.region,
+      comuna: data.comuna,
+      fecha: currentDate(),
+      talento: data.talento,
+      horario: data.horario,
+      detalle: data.detalle,
     })
   };
 

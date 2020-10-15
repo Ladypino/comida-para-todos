@@ -10,13 +10,31 @@ function DonateHuertas() {
 
 	const [formHuerta, setFormHuerta] = useState([]);
 
+	const currentDate = () => {
+    let date = new Date();
+    const day = date.getDate();
+    const month = (date.getMonth() < 9 ? "0" : "") + (date.getMonth() + 1);
+    const year = date.getFullYear();
+    date = `${day}/${month}/${year}`;
+    return date;
+  };
+
 	const enviarDatos = (data, event) => {
 		setFormHuerta([...formHuerta, data])
 		event.preventDefault();
 		event.target.reset();
-		console.log(data)
+
 		db.collection("Huertas").doc(data.nombreCompleto).set({
-			data
+			nombreCompleto: data.nombreCompleto,
+      correo: data.correo,
+      numeroTelefonico: data.numeroTelefonico,
+      region:data.region,
+      comuna: data.comuna,
+			fecha: currentDate(),
+			ayudarHuerta: data.ayudarHuerta,
+      donarHuerta: data.donarHuerta,
+      tamanoTerreno: data.tamanoTerreno,
+      detalle: data.detalle,
 		})
 	}
 
@@ -162,6 +180,7 @@ function DonateHuertas() {
 							className='inputsFormHuertas'
 							name="tamanoTerreno"
 							placeholder="Ej 6m2 o 2x3m"
+							ref={register}
 						/>
 					</div>
 					<div>
@@ -170,6 +189,7 @@ function DonateHuertas() {
 							className='textareaSection'
 							name="detalle"
 							placeholder="Ej. Tengo un espacio de 1m de ancho y 7 de largo en la vereda afuera de mi entrada"
+							ref={register}
 						/>
 					</div>
 					<button className='btnSubmitForm' type="submit">ENVIAR FORMULARIO</button>

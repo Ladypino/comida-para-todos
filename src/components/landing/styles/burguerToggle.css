@@ -58,7 +58,8 @@
     box-sizing: inherit;
     margin-right: 10px;
     border: none;
-    background: rgba(146, 146, 146, 0.6);
+    background: rgba(145, 145, 145, 0.4);
+    top:0px;
   }
   .toggleVisible {
     flex-direction: row;
@@ -66,14 +67,14 @@
     top: 0px;
     right: -1;;
     width: auto;
-    height: auto;
+    height: 15px;
     border: none;
     box-sizing: border-box;
     transition: none;
     z-index: 3;
     margin-right: 10px;
     color:white;
-    background: rgba(146, 146, 146, 0.6);
+    background: rgba(145, 145, 145, 0.4);
   }
   .boxSection{
     display: flex;
@@ -81,10 +82,10 @@
     padding:16px;
     width:150px;
     color:white;
-    background: rgba(146, 146, 146, 0.6);
+    background: rgba(145, 145, 145, 0.4);
     border: none;
     margin-right: 4px;
-    height:20px;
+    height:15px;
     justify-content: center;
     align-items: center;
   }

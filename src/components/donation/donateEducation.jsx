@@ -6,17 +6,39 @@ import banner from '../../img/Landing/Donar/educacion.jpg'
 
 
 const Donate = () => {
+
+  const currentDate = () => {
+    let date = new Date();
+    const day = date.getDate();
+    const month = (date.getMonth() < 9 ? "0" : "") + (date.getMonth() + 1);
+    const year = date.getFullYear();
+    date = `${day}/${month}/${year}`;
+    return date;
+  };
+
+  console.log(currentDate())
+
   const { register, errors, handleSubmit } = useForm()
   const [form, setForm] = useState([]);
 
   const db = firebase.firestore();
 
   const enviarDatos = (data, event) => {
-    setForm([...form, data])
+    setForm([...form,data])
+    console.log(form)
+    console.log(data)
     event.preventDefault();
     event.target.reset();
     db.collection("Educacion").doc(data.nombreCompleto).set({
-      data
+      nombreCompleto: data.nombreCompleto,
+      correo: data.correo,
+      numeroTelefonico: data.numeroTelefonico,
+      region:data.region,
+      comuna: data.comuna,
+      fecha: currentDate(),
+      capacitacion: data.capacitacion,
+      horario: data.horario,
+      detalle: data.detalle,
     })
   }
 

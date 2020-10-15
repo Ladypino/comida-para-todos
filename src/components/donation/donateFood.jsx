@@ -11,12 +11,33 @@ function Donate() {
 
 	const [form, setForm] = useState([]);
 
+	const currentDate = () => {
+    let date = new Date();
+    const day = date.getDate();
+    const month = (date.getMonth() < 9 ? "0" : "") + (date.getMonth() + 1);
+    const year = date.getFullYear();
+    date = `${day}/${month}/${year}`;
+    return date;
+  };
+
 	const enviarDatos = (data, event) => {
 		setForm([...form, data])
 		event.preventDefault();
 		event.target.reset();
 		console.log(data)
-		db.collection("Despensa").doc(data.nombreCompleto).set({ data })
+		db.collection("Despensa").doc(data.nombreCompleto).set({
+			nombreCompleto: data.nombreCompleto,
+      correo: data.correo,
+      numeroTelefonico: data.numeroTelefonico,
+      region:data.region,
+      comuna: data.comuna,
+			fecha: currentDate(),
+			helpFood: data.helpFood,
+      donarFood: data.donarFood,
+      empresa: data.empresa,
+      numeroPedido: data.numeroPedido,
+      detalle: data.detalle,
+		})
 	};
 
 	return (
@@ -135,14 +156,14 @@ function Donate() {
 					<div className='textandCheckbox'>
 						<p className='titleFormsCheckbox'>
 							<input className='formCheckbox'
-							name="help"
+							name="helpFood"
 							type="checkbox"
 							value={true}
 							ref={register}
 						/> Quiero hacer una colecta en mi comunidad y trasladar los alimentos </p>
 						<p className='titleFormsCheckbox'>
 							<input className='formCheckbox'
-							name="Donar"
+							name="donarFood"
 							type="checkbox"
 							value={true}
 							ref={register}

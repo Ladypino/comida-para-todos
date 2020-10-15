@@ -10,6 +10,8 @@ import { ShowContext } from '../../App';
 
 function DonateSection() {
 
+  const scrollForm = window.screen.width<1024? 390 : 780;
+
   // me traigo valores del contexto
   const { formToShow, positionScrollForm } = useContext(ShowContext);
 
@@ -43,7 +45,7 @@ function DonateSection() {
             </div>
             <div className='containerDonates'>
               <div className='eachDonateContainer'>
-                <Link to="/Donaciones" onClick={() => { setFormToShowValue('Food'); setPositionScrollFormValue(390) }}>
+                <Link to="/Donaciones" onClick={() => { setFormToShowValue('Food'); setPositionScrollFormValue(scrollForm) }}>
                   <img className='imgDonate' src={despensa} alt='despensa' />
                   <div className='textBtnDonates'>Despensa</div>
                   <div className='iconPlusDonate'>
@@ -52,7 +54,7 @@ function DonateSection() {
                 </Link>
               </div>
               <div className='eachDonateContainer'>
-                <Link to="/Donaciones" onClick={() => { setFormToShowValue('Talent'); setPositionScrollFormValue(390) }}>
+                <Link to="/Donaciones" onClick={() => { setFormToShowValue('Talent'); setPositionScrollFormValue(scrollForm) }}>
                   <img className='imgDonate' src={talento} alt='talento' />
                   <div className='textBtnDonates'>Talento</div>
                   <div className='iconPlusDonate'>
@@ -61,7 +63,7 @@ function DonateSection() {
                 </Link>
               </div>
               <div className='eachDonateContainer'>
-                <Link to="/Donaciones" onClick={() => { setFormToShowValue('Education'); setPositionScrollFormValue(390) }}>
+                <Link to="/Donaciones" onClick={() => { setFormToShowValue('Education'); setPositionScrollFormValue(scrollForm) }}>
                   <img className='imgDonate' src={educacion} alt='educacion' />
                   <div className='textBtnDonates'>Educación</div>
                   <div className='iconPlusDonate'>
@@ -70,7 +72,7 @@ function DonateSection() {
                 </Link>
               </div>
               <div className='eachDonateContainer'>
-                <Link to="/Donaciones" onClick={() => { setFormToShowValue('Huertas'); setPositionScrollFormValue(390) }}>
+                <Link to="/Donaciones" onClick={() => { setFormToShowValue('Huertas'); setPositionScrollFormValue(scrollForm)}}>
                   <img className='imgDonate' src={huertas} alt='huertas' />
                   <div className='textBtnDonates'>Huertas</div>
                   <div className='iconPlusDonate'>
