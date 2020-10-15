@@ -4,7 +4,7 @@
    
 }
 .carousel{
-    margin-top:16px ;
+    margin-top:30px ;
 }
 .carouselContainer{
     width: 100%;    
@@ -22,6 +22,9 @@
 .alice-carousel__play-btn{
 	display: none;
 
+}
+.socialFeed{
+	display: none;
 }
 
 
@@ -67,13 +70,13 @@
 	}
   
 	.alice-carousel__wrapper {
-	  position: relative;
+	  /* position: relative; */
 	  box-sizing: border-box;
 	  width: 90rem;
-	  height: auto;
+	  height: 480px;
 	}
 	.footerframe {
-	  background-image: url("https://www.powr.io/powr.js?platform=html");
+	  /* background-image: url("https://www.powr.io/powr.js?platform=html"); */
 	  width: 100%;
 	  height: 25rem;
 	}

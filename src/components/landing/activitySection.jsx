@@ -137,7 +137,7 @@ const ActivitySectionF = () => {
       <div className="footerframe">
         
         {/* PARA PC <div class="powr-instagram-feed" id="f8dded9d_1602728312"></div><script src="https://www.powr.io/powr.js?platform=html"></script> */}
-         PARA CELULAR<div class="powr-instagram-feed" id="a72790f2_1602740365"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+         <div class="powr-instagram-feed" id="a72790f2_1602740365"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
       </div>
       <p className="bottomTextInsta">hace 5 días en @comida_para_todos_cl </p>
       <div className="h2Carrousel">

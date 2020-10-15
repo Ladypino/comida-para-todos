@@ -5,7 +5,7 @@ import './styles/bannerIntra.css';
 
 function BannerIntra() {
   return (
-    <div className='containerBanner'>
+    <div className='containerBannerIntranet'>
        <img src={banner} alt="banner" className='banner'/> 
     </div>
   );

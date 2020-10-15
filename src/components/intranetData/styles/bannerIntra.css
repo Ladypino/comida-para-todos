@@ -3,7 +3,7 @@
     object-fit: cover;
     z-index: -3;
 }
-.containerBanner{
+.containerBannerIntranet{
     display: none;
     width:100%;
     height:88px;
