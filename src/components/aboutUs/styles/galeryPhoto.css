@@ -1,113 +1,73 @@
-
-
-.item {
-  height: fit-content;
-
-}
-
-.sectionGaleryPhotos {
-  margin: 30px 16px 0px 16px;
-  display: flex;
-  flex-flow: column nowrap;
-  line-height: 0;
-}
-.titleGalery {
-  font-size: 16px;
-}
-
-.imgGalery {
-  width: 10rem;
-  height: 10rem;
-}
-
-.alice-carousel{
-		position: relative;
-		width: 100%;
-		margin: auto;
-		direction: ltr;
-		position: relative;
+.sectionGaleryPhotos{
+    margin:30px 16px 0px 16px;
     display: flex;
-    white-space: 1px;
-    line-height: 0;
-    display: inline-flex;
-    justify-content: center;
-	max-width: 50;
-
+    flex-flow: column nowrap;
 }
-
-
-.alice-carousel__stage-item {
-    position: relative;
-    display: flex;
-    white-space: 1px;
-    line-height: 0;
-    display: inline-flex;
-    justify-content: space-between;
-	max-width: 50;
+.titleGalery{
+    font-size: 16px;
 }
-
-.alice-carousel__wrapper {
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    box-sizing: border-box;
-    width: 21rem;
-	height: auto
+.carousel{
+    margin-top:16px ;
 }
-@media screen and (min-width:1024px){
-	
-.item {
-	height: fit-content;
-  
-  }
-  
-  .sectionGaleryPhotos {
-	margin: 30px 16px 0px 16px;
-	display: flex;
-	flex-flow: column nowrap;
-	line-height: 0;
-  }
-  .titleGalery {
-	font-size: 16px;
-  }
-  
-  .imgGalery {
-	width: 28rem;
-	height: 23rem;
-  }
-  
-  .alice-carousel{
-		  position: relative;
-		  width: 100%;
-		  margin: auto;
-		  direction: ltr;
-		  position: relative;
-	  display: flex;
-	  white-space: 1px;
-	  line-height: 0;
-	  display: inline-flex;
-	  justify-content: center;
-	  max-width: 50;
-  
-  }
+.carouselContainer{
+    width: 100%;    
+}
+.imgGalery{
+    width: 168px;
+    height: 160px;
+}
+@media screen and (min-width: 1024px) {
+
+	.titleActSecs {
+	  font-size: 30px;
+	  margin-left: 80px;
+	}
   
   
-  .alice-carousel__stage-item {
+  
+	.alice-carousel {
+	  position: relative;
+	  width: 100%;
+	  margin: auto;
+	  direction: ltr;
 	  position: relative;
 	  display: flex;
-	  white-space: 1px;
-	  line-height: 0;
+	  white-space: space pre; ;
+	  line-height: 12rem;
+	  display: inline-flex;
+	  justify-content: center;
+	 
+	}
+  
+	.alice-carousel__stage-item {
+	  position: relative;
+	  display: flex;
 	  display: inline-flex;
 	  justify-content: space-between;
 	  max-width: 50;
-  }
+	}
   
-  .alice-carousel__wrapper {
+	.alice-carousel__wrapper {
 	  position: relative;
-	  overflow-x: hidden;
-	  overflow-y: hidden;
 	  box-sizing: border-box;
 	  width: 90rem;
-	  height: auto
+	  height: auto;
+	}
+	.footerframe {
+	  background-image: url("https://www.powr.io/powr.js?platform=html");
+	  width: 100%;
+	  height: 25rem;
+	}
+	.h2Carrousel {
+	  background-color: white;
+	  width: 100%;
+	  height: 120px;
+	}
+	.alice-carousel__stage-item  {
+		width: 40rem;
+
+	}
+	
+
   }
-}
+  
