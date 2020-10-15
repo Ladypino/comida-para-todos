@@ -129,12 +129,11 @@
 }
 .socialFeed{
 margin: 0.1px;
-
+min-height: 100rem;
 }
 
 .socialFeed.grid.pad-bottom-m{
-height: 999999
-rem;
+height: 90rem;
 }
 @media screen and (min-width: 1024px) {
 
