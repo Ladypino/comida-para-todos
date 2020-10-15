@@ -1,10 +1,7 @@
-.sectionGaleryPhotos{
-    margin:30px 16px 0px 16px;
-    display: flex;
-    flex-flow: column nowrap;
-}
+
 .titleGalery{
-    font-size: 16px;
+	font-size: 30px;
+   
 }
 .carousel{
     margin-top:16px ;
@@ -16,14 +13,36 @@
     width: 168px;
     height: 160px;
 }
+.sectionGaleryPhotos{
+	display: flex;
+    flex-flow: column nowrap;
+    margin:30px 16px 20px 16px;
+}
+
+.alice-carousel__play-btn{
+	display: none;
+
+}
+
+
 @media screen and (min-width: 1024px) {
+	.sectionGaleryPhotos{
+		margin:30px 80px 52px 80px;
+	}
 
 	.titleActSecs {
 	  font-size: 30px;
 	  margin-left: 80px;
 	}
   
-  
+	.alice-carousel__play-btn{
+		display: none;
+	
+	}
+	.items{
+		padding-block-end: 3rem;
+
+	}
   
 	.alice-carousel {
 	  position: relative;
@@ -67,6 +86,12 @@
 		width: 40rem;
 
 	}
+	
+	
+.titleGalery{
+
+	font-size: 30px;
+}
 	
 
   }

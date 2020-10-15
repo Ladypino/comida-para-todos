@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Galeria1 from "../../img/AboutUs/Galery/galeria1.jpg";
@@ -21,25 +21,30 @@ const GaleryPhoto = () => {
   
   const items = [
     <div className="item">
-      1<img className="imgGalery" alt="photo" src={Galeria1} />
+      <img className="imgGalery" alt="photo" src={Galeria1} />
     </div>,
     <div className="item">
-      2<img className="imgGalery" alt="photo" src={Galeria2} />
+      <img className="imgGalery" alt="photo" src={Galeria2} />
     </div>,
     <div className="item">
-      3<img className="imgGalery" alt="photo" src={Galeria3} />
+      <img className="imgGalery" alt="photo" src={Galeria3} />
     </div>,
     <div className="item">
-      4 <img className="imgGalery" alt="photo" src={Galeria4} />
+       <img className="imgGalery" alt="photo" src={Galeria4} />
     </div>,
     <div className="item">
-      5 <img className="imgGalery" alt="photo" src={Galeria5} />
+       <img className="imgGalery" alt="photo" src={Galeria5} />
     </div>,
     <div className="item">
-      5 <img className="imgGalery" alt="photo" src={Galeria6} />
+       <img className="imgGalery" alt="photo" src={Galeria6} />
     </div>,
   ];
   return (
+   <Fragment>
+   <div className='sectionGaleryPhotos'>
+   
+    <h1 className='titleGalery'>GALERIA</h1>
+
     <AliceCarousel
       mouseTracking
       items={items}
@@ -55,6 +60,8 @@ const GaleryPhoto = () => {
       disableDotsControls
       disableButtonsControls
     />
+    </div>
+    </Fragment>
   );
 };
 

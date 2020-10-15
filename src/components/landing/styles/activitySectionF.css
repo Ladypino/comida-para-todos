@@ -83,7 +83,7 @@
   line-height: 0;
 }
 .titleGalery {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .imgGalery {
@@ -123,18 +123,33 @@
   width: 21rem;
   height: auto;
 }
+.alice-carousel__play-btn{
+  display: none;
+
+}
+.socialFeed{
+margin: 0.1px;
+
+}
+
+.socialFeed.grid.pad-bottom-m{
+height: 999999
+rem;
+}
 @media screen and (min-width: 1024px) {
 
-  .titleActSecs {
+  .titleGalery {
     font-size: 30px;
-    margin-left: 80px;
+}
+  .titleActSec{
+    font-size: 30px;
+    margin-left: -19rem;
   }
 
 
-
-  .imgActivity {
-    width: 173px;
-    height: 144px;
+  .imgGalery{
+    width: 28rem;
+    height: 20rem;
   }
 
   .alice-carousel {
@@ -178,6 +193,12 @@
   .powr-instagram-feed{
       background-image: url("https://www.powr.io/powr.js?platform=html");
   }
+  .alice-carousel__play-btn{
+		display: none;
+	
+  }
+  
+  .blog.js-powrMark .pad-m .pad-top-l .powrMark .text-center{
+display: none;
+  }
 }
-
-

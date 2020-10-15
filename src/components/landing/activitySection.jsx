@@ -137,7 +137,7 @@ const ActivitySectionF = () => {
       <div className="footerframe">
         
         {/* PARA PC <div class="powr-instagram-feed" id="f8dded9d_1602728312"></div><script src="https://www.powr.io/powr.js?platform=html"></script> */}
-        {/* PARA CELULAR<iframe class="instagram-media-instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/CGN_2tcHIk4/embed/?cr=1&amp;v=12&amp;wp=746&amp;rd=http%3A%2F%2Flocalhost%3A3000&amp;rp=%2FDonaciones#%7B%22ci%22%3A0%2C%22os%22%3A1508.6749999900348%2C%22ls%22%3A665.4649999982212%2C%22le%22%3A667.650000017602%7D ;"></iframe>   */}
+         PARA CELULAR<div class="powr-instagram-feed" id="a72790f2_1602740365"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
       </div>
       <p className="bottomTextInsta">hace 5 días en @comida_para_todos_cl </p>
       <div className="h2Carrousel">
