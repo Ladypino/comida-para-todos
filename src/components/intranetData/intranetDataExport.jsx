@@ -9,7 +9,6 @@ import { exportDataGrid } from 'devextreme/excel_exporter';
 import 'devextreme/data/odata/store';
 
 
-
 class IntranetDataExport extends React.Component {
   constructor(props) {
     super(props);

@@ -34,6 +34,7 @@ const GetData = () => {
 
   return (
     <Fragment>  
+      
       <div className='contentIntranetForms'>
         <div className='textIntranetForms'>
           <h1 className='titleIntranetForms'>¡Bienvenido!</h1>

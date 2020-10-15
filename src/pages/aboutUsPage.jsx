@@ -7,7 +7,7 @@ import WhatWeDo from '../components/aboutUs/whatWeDo';
 import WhatWeArchived from '../components/aboutUs/whatWeArchived';
 import Transparency from '../components/aboutUs/transparency';
 import Footer from '../components/landing/footer';
-
+import GaleryPhoto from '../components/aboutUs/galeryPhotos'
 
 const AboutUs = () => {
 
@@ -17,7 +17,8 @@ const AboutUs = () => {
       <Banner/>
       <History/>
       <Team/>
-      {/* <GaleryPhoto/> */}
+      
+       <GaleryPhoto />
       <WhatWeDo/>
       <WhatWeArchived/>
       <Transparency/>

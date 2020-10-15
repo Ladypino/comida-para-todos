@@ -1,7 +1,6 @@
-import React from 'react';
-import './styles/whatWeDo.css';
-import scheme from '../../img/AboutUs/scheme.png';
-
+import React from "react";
+import "./styles/whatWeDo.css";
+import scheme from "../../img/AboutUs/scheme.png";
 
 function WhatWeDo() {
 	return (

@@ -3,6 +3,7 @@ import HeaderIntranet from '../components/intranetData/headerIntra';
 import GetData from '../components/intranetData/getData';
 import BannerIntra from '../components/intranetData/banner';
 
+import Logint from '../components/intranetData/Logint';
 const IntranetPage = () => {
 
   return (
@@ -10,7 +11,9 @@ const IntranetPage = () => {
       <HeaderIntranet/>
       <BannerIntra/>
       <GetData />
+      <Logint/>
     </Fragment>
+   
   );
 }
 

@@ -18,7 +18,7 @@ const LandingPage = () => {
       <DonateSection/>
       <MotivationSectionF/>
        <ActivitySectionF/> 
-      <Carousel2/>
+    
       <Footer/>
     </Fragment>  
   );
