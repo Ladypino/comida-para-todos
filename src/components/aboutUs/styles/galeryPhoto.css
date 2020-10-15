@@ -1,19 +1,113 @@
-.sectionGaleryPhotos{
-    margin:30px 16px 0px 16px;
+
+
+.item {
+  height: fit-content;
+
+}
+
+.sectionGaleryPhotos {
+  margin: 30px 16px 0px 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  line-height: 0;
+}
+.titleGalery {
+  font-size: 16px;
+}
+
+.imgGalery {
+  width: 10rem;
+  height: 10rem;
+}
+
+.alice-carousel{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		direction: ltr;
+		position: relative;
     display: flex;
-    flex-flow: column nowrap;
-    line-height:0;
+    white-space: 1px;
+    line-height: 0;
+    display: inline-flex;
+    justify-content: center;
+	max-width: 50;
+
 }
-.titleGalery{
-    font-size: 16px;
+
+
+.alice-carousel__stage-item {
+    position: relative;
+    display: flex;
+    white-space: 1px;
+    line-height: 0;
+    display: inline-flex;
+    justify-content: space-between;
+	max-width: 50;
 }
-.carousel{
-    margin-top:16px ;
+
+.alice-carousel__wrapper {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    width: 21rem;
+	height: auto
 }
-.carouselContainer{
-    width: 100%;    
-}
-.imgGalery{
-    width: 168px;
-    height: 160px;
+@media screen and (min-width:1024px){
+	
+.item {
+	height: fit-content;
+  
+  }
+  
+  .sectionGaleryPhotos {
+	margin: 30px 16px 0px 16px;
+	display: flex;
+	flex-flow: column nowrap;
+	line-height: 0;
+  }
+  .titleGalery {
+	font-size: 16px;
+  }
+  
+  .imgGalery {
+	width: 28rem;
+	height: 23rem;
+  }
+  
+  .alice-carousel{
+		  position: relative;
+		  width: 100%;
+		  margin: auto;
+		  direction: ltr;
+		  position: relative;
+	  display: flex;
+	  white-space: 1px;
+	  line-height: 0;
+	  display: inline-flex;
+	  justify-content: center;
+	  max-width: 50;
+  
+  }
+  
+  
+  .alice-carousel__stage-item {
+	  position: relative;
+	  display: flex;
+	  white-space: 1px;
+	  line-height: 0;
+	  display: inline-flex;
+	  justify-content: space-between;
+	  max-width: 50;
+  }
+  
+  .alice-carousel__wrapper {
+	  position: relative;
+	  overflow-x: hidden;
+	  overflow-y: hidden;
+	  box-sizing: border-box;
+	  width: 90rem;
+	  height: auto
+  }
 }

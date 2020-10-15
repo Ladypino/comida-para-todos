@@ -39,7 +39,8 @@ const ActivitySectionF = () => {
         <h1 className='titleActSec'>ACTIVIDAD RECIENTE</h1>
         {""}
         <div className='footerframe'>
-          <iframe className='instagram-media-instagram-media-rendered' src="https://www.powr.io/instagram-feed/u/c349a139_1602450916#platform=embed" ></iframe>
+        <div class="powr-instagram-feed" id="0eace113_1602722877"></div><script src="https://www.powr.io/powr.js?platform=html#"></script>
+         
         </div>
         <p className='bottomTextInsta'>hace 5 días en @comida_para_todos_cl </p>
         <div className='h2Carrousel'>
