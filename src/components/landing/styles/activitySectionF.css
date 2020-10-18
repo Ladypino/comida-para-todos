@@ -9,11 +9,14 @@
 .textActivitySection {
   background-color: #f4f4f4;
 }
+.instagramDesktop{
+  display: none;
+}
 
 .containerActivitySection {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   margin: 1.5rem 0px;
   background-color: #f4f4f4;
   text-align: start;
@@ -57,6 +60,8 @@
 
 .titleActSec {
   text-align: start;
+  margin-left: 16px;
+  margin: 11px;
 }
 .bottomTextInsta {
   font-style: italic;
@@ -65,9 +70,7 @@
   font-weight: lighter;
   text-align: start;
 }
-.titleActSecs {
-  margin-left: 16px;
-}
+
 .footerframe {
   width: 100%;
 }
@@ -103,6 +106,7 @@
   display: inline-flex;
   justify-content: center;
   max-width: 50;
+  background-color: #ffffff
 }
 
 .alice-carousel__stage-item {
@@ -113,6 +117,7 @@
   display: inline-flex;
   justify-content: space-between;
   max-width: 50;
+  background-color:#ffffff
 }
 
 .alice-carousel__wrapper {
@@ -135,14 +140,30 @@ min-height: 100rem;
 .socialFeed.grid.pad-bottom-m{
 height: 90rem;
 }
+.blog .js-powrMark .pad-m .pad-top-l .powrMark .text-center{
+  display: none;
+}
+
+
 @media screen and (min-width: 1024px) {
+
+  .instagramDesktop{
+    display: block;
+  }
+  .instagramMobile{
+    display: none;
+  }
+  .imgActivity {
+    height: 150x;
+    width: 150px;
+  }
 
   .titleGalery {
     font-size: 30px;
 }
   .titleActSec{
     font-size: 30px;
-    margin-left: -19rem;
+    margin-left: 19rem;
   }
 
 
@@ -182,7 +203,7 @@ height: 90rem;
   .footerframe {
     background-image: url("https://www.powr.io/powr.js?platform=html");
     width: 100%;
-    height: 25rem;
+    /* height: 25rem; */
   }
   .h2Carrousel {
     background-color: white;

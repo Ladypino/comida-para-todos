@@ -132,12 +132,14 @@ const ActivitySectionF = () => {
   ];
   return (
     <div className="containerActivitySection">
-      <h1 className="titleActSec">ACTIVIDAD RECIENTE</h1>
+      <h1 className="titleActSecs">ACTIVIDAD RECIENTE</h1>
       {""}
       <div className="footerframe">
-        
-        {/* PARA PC <div class="powr-instagram-feed" id="f8dded9d_1602728312"></div><script src="https://www.powr.io/powr.js?platform=html"></script> */}
-         <div class="powr-instagram-feed" id="a72790f2_1602740365"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+
+        <div class="powr-instagram-feed instagramDesktop" id="4ae2023d_1603060801">
+        </div>
+        <div class="powr-social-feed instagramMobile" id="7ee987e4_1603058181"></div>
+        {/* <script src="https://www.powr.io/powr.js?platform=embed"></script> */}
       </div>
       <p className="bottomTextInsta">hace 5 días en @comida_para_todos_cl </p>
       <div className="h2Carrousel">

@@ -51,7 +51,7 @@ function DonateTalent() {
           <p className='text'>Desde realizar la contabilidad para una pyme, hasta hacer un show de stand-up en un comedor solidario de la red <strong>¡Dinos cuál es tu talento!</strong></p>
         </div>
         <form className='formHuertasSection' onSubmit={handleSubmit(datos)}>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Nombre completo</p>
             <input placeholder='Ej. Juan Perez Abarca'
               className='inputsFormHuertas'
@@ -69,7 +69,7 @@ function DonateTalent() {
               {errors?.nombreCompleto?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Déjanos tu correo</p>
             <input placeholder='Ej. juanpereza@gmail.com'
               className='inputsFormHuertas'
@@ -86,7 +86,7 @@ function DonateTalent() {
               {errors?.correo?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Número de contacto</p>
             <input placeholder='+569 XXXX XXXX'
               className='inputsFormHuertas'
@@ -111,7 +111,7 @@ function DonateTalent() {
               {errors?.numeroTelefonico?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Selecciona tu región</p>
             <select
               className='selectFormHuertas'
@@ -143,7 +143,7 @@ function DonateTalent() {
               {errors?.region?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>¿En qué comuna te encuentras?</p>
             <input
               className='inputsFormHuertas'
@@ -159,7 +159,7 @@ function DonateTalent() {
               {errors?.comuna?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>¿Qué talento te gustaría ejercer en pos de nuestros beneficiarios?</p>
             <textarea
               placeholder='Ej. Soy diseñador y me gustaría desarrollar logos para los emprendedores de la red'
@@ -178,7 +178,7 @@ function DonateTalent() {
               {errors?.talento?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>¿Cúal es tu disponibilidad horaria?</p>
             <input type='text'
               placeholder='Ej. Lunes y Miércoles desde las 16hrs'
@@ -197,7 +197,7 @@ function DonateTalent() {
               {errors?.horario?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Coméntanos cualquier detalle que consideres necesario</p>
             <textarea
               placeholder='Ej. Necesitaré conversar con los emprendedores para crear un logo acorde a su negocio'

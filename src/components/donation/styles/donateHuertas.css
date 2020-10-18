@@ -82,6 +82,10 @@
   margin:0px 16px 0px 16px;
 }
 @media screen and (min-width:1024px){
+  .containerEachQuestion{
+    display: flex;
+    flex-flow: column nowrap;
+  }
   .sectionTitleText{
     display:flex;
     flex-flow:column nowrap;

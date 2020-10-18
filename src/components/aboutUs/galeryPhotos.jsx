@@ -41,10 +41,8 @@ const GaleryPhoto = () => {
   ];
   return (
     <Fragment>
+      <h1 className='titleGalery'>GALERIA</h1>
       <div className='sectionGaleryPhotos'>
-
-        <h1 className='titleGalery'>GALERIA</h1>
-
         <AliceCarousel
           mouseTracking
           items={items}

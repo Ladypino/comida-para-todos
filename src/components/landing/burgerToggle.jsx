@@ -4,8 +4,8 @@ import './styles/burguerToggle.css';
 import { animateScroll as scroll } from 'react-scroll';
 
 const BurguerToggle = (props) => {
-  const scrollQueHacemos= window.screen.width<1024 ? 2030 : 1930;
-  const scrollTransparencia= window.screen.width<1024 ? 3600 : 3080;
+  const scrollQueHacemos= window.screen.width<1024 ? 2050 : 2000;
+  const scrollTransparencia= window.screen.width<1024 ? 3420 : 3150;
 
   const classToogle = props.burgerOn === true ? 'toggleVisible' : 'toggleHidden'
 

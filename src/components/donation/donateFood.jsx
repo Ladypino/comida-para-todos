@@ -12,13 +12,13 @@ function Donate() {
 	const [form, setForm] = useState([]);
 
 	const currentDate = () => {
-    let date = new Date();
-    const day = date.getDate();
-    const month = (date.getMonth() < 9 ? "0" : "") + (date.getMonth() + 1);
-    const year = date.getFullYear();
-    date = `${day}/${month}/${year}`;
-    return date;
-  };
+		let date = new Date();
+		const day = date.getDate();
+		const month = (date.getMonth() < 9 ? "0" : "") + (date.getMonth() + 1);
+		const year = date.getFullYear();
+		date = `${day}/${month}/${year}`;
+		return date;
+	};
 
 	const enviarDatos = (data, event) => {
 		setForm([...form, data])
@@ -27,16 +27,16 @@ function Donate() {
 		console.log(data)
 		db.collection("Despensa").doc(data.nombreCompleto).set({
 			nombreCompleto: data.nombreCompleto,
-      correo: data.correo,
-      numeroTelefonico: data.numeroTelefonico,
-      region:data.region,
-      comuna: data.comuna,
+			correo: data.correo,
+			numeroTelefonico: data.numeroTelefonico,
+			region: data.region,
+			comuna: data.comuna,
 			fecha: currentDate(),
 			helpFood: data.helpFood,
-      donarFood: data.donarFood,
-      empresa: data.empresa,
-      numeroPedido: data.numeroPedido,
-      detalle: data.detalle,
+			donarFood: data.donarFood,
+			empresa: data.empresa,
+			numeroPedido: data.numeroPedido,
+			detalle: data.detalle,
 		})
 	};
 
@@ -55,7 +55,7 @@ function Donate() {
 					<p className='text'>Con tu número de pedido en Empresas Amigas, puedes <strong>inscribir alimentos para donar</strong> y que éstos sean recogidos cuando lleven tu envío.</p>
 				</div>
 				<form className='formHuertasSection' onSubmit={handleSubmit(enviarDatos)}>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>Nombre completo</p>
 						<input className='inputsFormHuertas'
 							name="nombreCompleto"
@@ -69,8 +69,8 @@ function Donate() {
 						<span className='erorsText'>
 							{errors?.nombreCompleto?.message}
 						</span>
-					</div>
-					<div>
+					</div >
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>Déjanos tu correo</p>
 						<input className='inputsFormHuertas'
 							name="correo"
@@ -86,7 +86,7 @@ function Donate() {
 							{errors?.correo?.message}
 						</span>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<br />
 						<p className='titleForms'>Número de contacto</p>
 						<input className='inputsFormHuertas'
@@ -136,9 +136,8 @@ function Donate() {
 							{errors?.region?.message}
 						</span>
 					</div>
-					<div>
-						<p className='titleForms
-		  '>¿En qué comuna te encuentras?</p>
+					<div className='containerEachQuestion'>
+						<p className='titleForms'>¿En qué comuna te encuentras?</p>
 						<input
 							className='inputsFormHuertas'
 							name="comuna"
@@ -156,18 +155,18 @@ function Donate() {
 					<div className='textandCheckbox'>
 						<p className='titleFormsCheckbox'>
 							<input className='formCheckbox'
-							name="helpFood"
-							type="checkbox"
-							value={true}
-							ref={register}
-						/> Quiero hacer una colecta en mi comunidad y trasladar los alimentos </p>
+								name="helpFood"
+								type="checkbox"
+								value={true}
+								ref={register}
+							/> Quiero hacer una colecta en mi comunidad y trasladar los alimentos </p>
 						<p className='titleFormsCheckbox'>
 							<input className='formCheckbox'
-							name="donarFood"
-							type="checkbox"
-							value={true}
-							ref={register}
-						/> Quiero donar alimentos para ser trasladados por Empresas Amigas </p>
+								name="donarFood"
+								type="checkbox"
+								value={true}
+								ref={register}
+							/> Quiero donar alimentos para ser trasladados por Empresas Amigas </p>
 					</div>
 					<div>
 						<p className='titleForms'>¿Con qué Empresa Amiga agendaste tu pedido?</p>
@@ -189,7 +188,7 @@ function Donate() {
 							{errors?.empresa?.message}
 						</span>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>Ingresa tu número de pedido </p>
 						<input className='inputsFormHuertas'
 							name="numeroPedido"
@@ -204,7 +203,7 @@ function Donate() {
 							{errors?.numeroPedido?.message}
 						</span>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>Describe los alimentos y cantidades a donar para asegurarles un lugar dentro del transporte</p>
 						<textarea className='textareaSection'
 							name="detalle"

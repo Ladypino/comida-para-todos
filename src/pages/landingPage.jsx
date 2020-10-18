@@ -3,7 +3,6 @@ import Header from '../components/landing/header';
 import Video from '../components/landing/video';
 import Footer from '../components/landing/footer';
 import DonateSection from '../components/landing/donateSection';
-import Carousel2 from '../components/landing/Carousel';
 import MotivationSectionF from '../components/landing/motivationSection'
 import ActivitySectionF from '../components/landing/activitySection'
 
@@ -15,12 +14,11 @@ const LandingPage = () => {
     <Fragment>
       <Header />
       <Video />
-      <DonateSection/>
-      <MotivationSectionF/>
-       <ActivitySectionF/> 
-    
-      <Footer/>
-    </Fragment>  
+      <DonateSection />
+      <MotivationSectionF />
+      <ActivitySectionF />
+      <Footer />
+    </Fragment>
   );
 }
 

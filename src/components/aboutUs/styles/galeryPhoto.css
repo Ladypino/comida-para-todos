@@ -1,6 +1,7 @@
 
 .titleGalery{
 	font-size: 30px;
+	margin:30px 16px 20px 16px;
    
 }
 .carousel{
@@ -30,7 +31,7 @@
 
 @media screen and (min-width: 1024px) {
 	.sectionGaleryPhotos{
-		margin:30px 80px 52px 80px;
+		margin:30px 80px 60px 80px;
 	}
 
 	.titleActSecs {
@@ -92,8 +93,8 @@
 	
 	
 .titleGalery{
-
 	font-size: 30px;
+	margin:30px 80px 60px 80px;
 }
 	
 

@@ -12,6 +12,9 @@
     height: 346.49px;
     object-fit: cover;
 }
+.textTransparency{
+    padding-top: 11px;
+}
 
 @media screen and (min-width:1024px){
     .sectionTransparency{

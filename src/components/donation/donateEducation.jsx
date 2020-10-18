@@ -58,7 +58,7 @@ const Donate = () => {
           <p className='text'>Piensa en ese tema en que eres experto y cómo podría favorecer a la comunidad, cuéntanos tu disponibilidad y <strong>planeemos unas clases</strong>.</p>
         </div>
         <form className='formHuertasSection' onSubmit={handleSubmit(enviarDatos)}>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Nombre completo</p>
             <input
               className='inputsFormHuertas'
@@ -74,7 +74,7 @@ const Donate = () => {
               {errors?.nombreCompleto?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Déjanos tu correo</p>
             <input
               className='inputsFormHuertas'
@@ -91,7 +91,7 @@ const Donate = () => {
               {errors?.correo?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Número de contacto</p>
             <input
               className='inputsFormHuertas'
@@ -109,7 +109,7 @@ const Donate = () => {
               {errors?.numeroTelefonico?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Selecciona tu región</p>
             <select
               className='selectFormHuertas'
@@ -141,7 +141,7 @@ const Donate = () => {
               {errors?.region?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>¿En qué comuna te encuentras?</p>
             <input
               className='inputsFormHuertas'
@@ -157,7 +157,7 @@ const Donate = () => {
               {errors?.comuna?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>¿En qué te gustaria ofrecer capacitación?</p>
             <input
               className='inputsFormHuertas'
@@ -173,7 +173,7 @@ const Donate = () => {
               {errors?.capacitacion?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>¿Cuál es tu disponibilidad horaria?</p>
             <input
               className='inputsFormHuertas'
@@ -189,7 +189,7 @@ const Donate = () => {
               {errors?.horario?.message}
             </span>
           </div>
-          <div>
+          <div className='containerEachQuestion'>
             <p className='titleForms'>Coméntanos si requieres materiales para los asistentes, espacio físico desde el cual
           capacitar u otros detalles importantes</p>
             <textarea

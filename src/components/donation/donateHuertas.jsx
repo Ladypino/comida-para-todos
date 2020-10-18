@@ -54,7 +54,7 @@ function DonateHuertas() {
 					<p className='text'>¡Podemos inaugurar juntos nuevas huertas comunitarias! Si hay espacios disponibles en tu barrio o si <strong>quieres regalarnos un espacio</strong> de tu patio. También puedes ofrecerte a mantener huertas existentes.</p>
 				</div>
 				<form className='formHuertasSection' onSubmit={handleSubmit(enviarDatos)}>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>Nombre completo</p>
 						<input
 							className='inputsFormHuertas'
@@ -70,7 +70,7 @@ function DonateHuertas() {
 							{errors?.nombreCompleto?.message}
 						</span>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>Déjanos tu correo</p>
 						<input
 							className='inputsFormHuertas'
@@ -87,7 +87,7 @@ function DonateHuertas() {
 							{errors?.correo?.message}
 						</span>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>Número de contacto</p>
 						<input
 							className='inputsFormHuertas'
@@ -105,7 +105,7 @@ function DonateHuertas() {
 							{errors?.numeroTelefonico?.message}
 						</span>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>Selecciona tu región</p>
 						<select
 							className='selectFormHuertas'
@@ -137,7 +137,7 @@ function DonateHuertas() {
 							{errors?.region?.message}
 						</span>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>¿En qué comuna te encuentras?</p>
 						<input
 							className='inputsFormHuertas'
@@ -174,7 +174,7 @@ function DonateHuertas() {
 							/> Quiero donar espacio para comenzar una huerta comunitaria </p>
 						</div>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>¿Cuántos m2 tiene el espacio?</p>
 						<input
 							className='inputsFormHuertas'
@@ -183,7 +183,7 @@ function DonateHuertas() {
 							ref={register}
 						/>
 					</div>
-					<div>
+					<div className='containerEachQuestion'>
 						<p className='titleForms'>¿El espacio está en su casa o barrio? Cuéntanos todos los detalles que puedas</p>
 						<textarea
 							className='textareaSection'
