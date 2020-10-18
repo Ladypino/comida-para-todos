@@ -1,0 +1,44 @@
+.sectionBecomePart{
+  display:flex;
+  flex-flow:column nowrap;
+  padding-top: 32px;
+  margin:0px 16px 0px 16px;
+}
+.textCenter{
+  font-size: 16px;
+  margin:24 0px 30px 0px;
+  text-align: start;
+}
+.textbecomepart{
+  width: 343px;
+  height: 95px;
+}
+
+.titleBecome{
+  margin-bottom: 11px;
+}
+
+@media screen and (min-width:1024px){
+  .sectionBecomePart{
+    display:flex;
+    flex-flow:row nowrap;
+    padding-top: 64px;
+    justify-content: space-between;
+    margin:0px 161px 64px 161px;
+  }
+  .textbecomepart{
+    width: 498px;
+    height: 130px;
+    font-size: 22px;
+  }
+  .titleBecome{
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+  .textCenter{
+    width: 577px; 
+    height: 58px;
+  
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,52 @@
+.sectionArchiveButtons{
+  display:flex;
+  flex-flow: row nowrap;
+  margin:30px 16px 10px 16px;
+}
+.archiveBtnOff{
+  width: 25%;
+  height: 40px;
+  background: #F4F4F4;;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius:0px 20px 0px 0px ;
+  outline:none;
+}
+
+.archiveBtnOn{
+  width: 25%;
+  height: 40px;
+  background: none;
+  border: 1px solid #000000;
+  border-bottom: none;
+  box-sizing: border-box;
+  box-shadow: 2px -3px 4px rgba(0, 0, 0, 0.25);
+  border-radius:0px 20px 0px 0px ;
+  outline:none;
+}
+
+@media screen and (min-width:1024px){
+  .containerSectionArchiveBtnAndDonateForms{
+    padding-bottom: 50px;
+  }
+  .sectionArchiveButtons{
+    display:flex;
+    flex-flow: row nowrap;
+    margin:30px 161px 33px 161px;
+    justify-content: center;
+  }
+  .archiveBtnOff{
+    width: 50%;
+    height: 62.98px;
+    font-size: 24px;
+  }
+  .archiveBtnOn{
+   font-size: 24px;
+    width: 50%;
+    height: 62.98px;
+  }
+  .archiveBtnOn:hover, .archiveBtnOff:hover{
+    color:white;
+    background-color: #fd4c00;
+  }
+}

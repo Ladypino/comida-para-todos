@@ -1,0 +1,51 @@
+.sectionWhatWeDo{
+    display: flex;
+    flex-flow: column nowrap;
+    margin:30px 16px 20px 16px;
+}
+
+.containerScheme{
+    display: flex;
+    margin-top: 16px;
+    width: auto;
+    height: 407px;
+}
+.scheme{
+    width: 100%;
+}
+.titlesecWhat{
+    margin-bottom: 11px;
+}
+.containerSchemeDesktop{
+    display:none;
+}
+
+@media screen and (min-width:1024px){
+    .sectionWhatWeDo{
+        margin:30px 80px 60px 80px;
+    }
+    .containerScheme{
+        display:none;
+    }
+    .titlesecWhat{
+        font-size: 30px;
+    }
+    .textwhat{
+        margin-top: 34px;
+        font-size: 24px;
+        width: 660px;
+    }
+    .containerSchemeDesktop{
+        display: flex;
+    }
+    .containerResponsiveWhatWeDo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .schemeDesktop{
+        width:600px;
+        object-fit: cover;
+    }
+    
+    
+}

@@ -1,0 +1,102 @@
+
+.titleGalery{
+	font-size: 30px;
+	margin:30px 16px 20px 16px;
+   
+}
+.carousel{
+    margin-top:30px ;
+}
+.carouselContainer{
+    width: 100%;    
+}
+.imgGalery{
+    width: 168px;
+    height: 160px;
+}
+.sectionGaleryPhotos{
+	display: flex;
+    flex-flow: column nowrap;
+    margin:30px 16px 20px 16px;
+}
+
+.alice-carousel__play-btn{
+	display: none;
+
+}
+.socialFeed{
+	display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+	.sectionGaleryPhotos{
+		margin:30px 80px 60px 80px;
+	}
+
+	.titleActSecs {
+	  font-size: 30px;
+	  margin-left: 80px;
+	}
+  
+	.alice-carousel__play-btn{
+		display: none;
+	
+	}
+	.items{
+		padding-block-end: 3rem;
+
+	}
+  
+	.alice-carousel {
+	  position: relative;
+	  width: 100%;
+	  margin: auto;
+	  direction: ltr;
+	  position: relative;
+	  display: flex;
+	  white-space: space pre; ;
+	  line-height: 12rem;
+	  display: inline-flex;
+	  justify-content: center;
+	 
+	}
+  
+	.alice-carousel__stage-item {
+	  position: relative;
+	  display: flex;
+	  display: inline-flex;
+	  justify-content: space-between;
+	  max-width: 50;
+	}
+  
+	.alice-carousel__wrapper {
+	  /* position: relative; */
+	  box-sizing: border-box;
+	  width: 90rem;
+	  height: 480px;
+	}
+	.footerframe {
+	  /* background-image: url("https://www.powr.io/powr.js?platform=html"); */
+	  width: 100%;
+	  height: 25rem;
+	}
+	.h2Carrousel {
+	  background-color: white;
+	  width: 100%;
+	  height: 120px;
+	}
+	.alice-carousel__stage-item  {
+		width: 40rem;
+
+	}
+	
+	
+.titleGalery{
+	font-size: 30px;
+	margin:30px 80px 60px 80px;
+}
+	
+
+  }
+  

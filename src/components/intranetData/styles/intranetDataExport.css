@@ -1,0 +1,17 @@
+#priceDataGrid, #ratingDataGrid {
+    padding: 10px;
+}
+#exportContainer {
+    text-align: right;
+}
+#tabPanel {
+    padding-top: 10px;
+}
+.containerdatatablecosas{
+    margin:0px 16px 0px 16px;
+}
+@media screen and (min-width:1024px){
+    .containerdatatablecosas{
+        margin:0px 56px 0px 56px;
+    }
+}

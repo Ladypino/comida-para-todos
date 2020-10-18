@@ -1,0 +1,50 @@
+.contentIntranetForms{
+    display: flex;
+    flex-flow: column nowrap;
+    padding:124px 16px 0px 16px;
+    background:  #F4F4F4;
+}
+.titleIntranetForms{
+    margin-bottom: 20px;
+}
+.textIntranetForms{
+    margin-bottom: 32px;
+}
+.tableIntra{
+    margin-left: 16px;
+    width: 350px;
+    height: 345px;
+}
+.btnsIntranetForms{
+    background-color: #fd4c00;
+    border:#929292 solid 1px;
+    color: white;
+    font-size: 15px;
+    width: 40%;
+    height: 48px;
+    margin: 1.5rem auto;
+    border-radius: 5rem;
+    line-height: 22px;
+    margin-top: 24px;
+}
+
+@media screen and (min-width:1024px){
+    .contentIntranetForms{
+        display: flex;
+        flex-flow: column nowrap;
+        padding:34px 16px 0px 16px;
+        background:  #F4F4F4;
+    }
+    .textIntranetForms{
+        margin:0px 56px 0px 56px;
+    }
+    .paragraphIntranetForms{
+        margin-bottom: 32px;
+        font-size:22px;
+    }
+    .btnsIntranetForms{
+        width:264px;
+        height:48px;
+        font-size:22px;
+    }
+}

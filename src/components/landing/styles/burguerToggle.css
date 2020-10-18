@@ -1,0 +1,97 @@
+.toggleHidden {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  transform: translateX(100%);
+  right: -1;
+  width: 300px;
+  height: auto;
+  border: 2px solid #F4F4F4;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
+  
+}
+.toggleVisible {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translateX(0%);
+  top: 88px;
+  right: 0px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #F4F4F4;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
+  z-index: 3;
+  cursor:pointer;
+}
+
+.textBurgerToggle{
+  font-size: 16px;
+  color:#929292;
+}
+.boxSection{
+  box-sizing: border-box;
+  border: 2px solid #F4F4F4;
+  padding: 16px 80px 16px 32px;
+}
+.boxSection:hover{
+  background: #FD4C00;
+  color:white;
+}
+.textBurgerToggle:hover{
+  color:white;
+}
+.oli{
+  text-decoration: none;
+}
+
+@media screen and (min-width:1024px){
+  .toggleHidden {
+    flex-direction: row;
+    position: relative;
+    transform: translateX(0%);
+    width: auto;
+    transition: none;
+    box-sizing: inherit;
+    margin-right: 10px;
+    border: none;
+    background: rgba(145, 145, 145, 0.4);
+    top:0px;
+  }
+  .toggleVisible {
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+    right: -1;;
+    width: auto;
+    height: 15px;
+    border: none;
+    box-sizing: border-box;
+    transition: none;
+    z-index: 3;
+    margin-right: 10px;
+    color:white;
+    background: rgba(145, 145, 145, 0.4);
+  }
+  .boxSection{
+    display: flex;
+    box-sizing: unset;
+    padding:16px;
+    width:150px;
+    color:white;
+    background: rgba(145, 145, 145, 0.4);
+    border: none;
+    margin-right: 4px;
+    height:15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .textBurgerToggle{
+    font-size:20px;
+    color: white;
+  }
+  
+}

@@ -1,0 +1,36 @@
+.header{
+    position: fixed;
+    height:88px;
+    background-color: white;
+    width:100%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 2;
+}
+.containerLogoHome{
+    width:64px;
+    margin-left: 16px;
+    cursor:pointer;
+}
+
+.logoHome{
+    width: 100%;
+}
+  
+@media screen and (min-width:1024px){
+    .header{
+      background: rgba(244, 244, 244, 0.3);
+      position: absolute;
+      height:136px;
+    }
+    .containerLogoHome{
+      width:97px;
+      margin-left: 48px;
+      height: auto;
+    }
+  
+  }
+  
+  

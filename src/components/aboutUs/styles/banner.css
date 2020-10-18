@@ -1,0 +1,19 @@
+.banner{
+    width:100%;
+    object-fit: cover;
+    z-index: -3;
+}
+.containerBanner{
+    display: flex;
+    width:100%;
+    height:88px;
+    padding-top: 88px;
+}
+
+
+@media screen and (min-width:1024px){
+    .containerBanner{
+        height: 464px;
+        padding-top: 0px;
+    }
+}

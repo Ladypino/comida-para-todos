@@ -1,0 +1,72 @@
+footer{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #B7B7B7;;
+  width:100%;
+  height: 151px;
+  /* padding: 0px 28px 0px 16px; */
+  bottom: 0px;
+  align-content: center;
+  align-items: center;
+}
+.containerLogoFooter{
+  width:88px;
+  margin-left: 16px;
+  cursor:pointer;
+}
+.logoFooter{
+  width: 100%;
+}
+.iconFooter{
+  width: 24px;
+  cursor:pointer;
+} 
+.containerEachContact{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 19px 0px 19px 24px;
+}
+
+.textFooter{
+  margin-left: 16px;
+  font-size: 16px;
+  color:#FBFBFB;
+  cursor:pointer;
+}
+.containerIconsTextFooter{
+  margin-left: 16px;
+}
+.linkExterno{
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+
+@media screen and (min-width:1024px){
+  footer{
+    height: 214px;
+    width: 100%;
+    bottom: 0px;
+    /* padding: 0px 28px 0px 16px; */
+  }
+  .containerLogoFooter{
+    width: 140px;
+    height: 151.28px;
+    margin-left: 101px;
+  }
+  .containerIconsTextFooter{
+    margin-left: 833px;
+  }
+  .textFooter{
+    margin-left: 34px;
+    font-size: 20px;
+  }
+  .iconFooter{
+    width: 38px;
+  } 
+ 
+
+
+}

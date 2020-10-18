@@ -1,0 +1,41 @@
+.sectionTransparency{
+    display: flex;
+    flex-flow: column nowrap;
+    margin:20px 16px 32px 16px;
+}
+.containerTransparency{
+    align-self: center;
+  
+}
+.graphic{
+    width: 346.49px;
+    height: 346.49px;
+    object-fit: cover;
+}
+.textTransparency{
+    padding-top: 11px;
+}
+
+@media screen and (min-width:1024px){
+    .sectionTransparency{
+        margin:40px 0px 0px 80px;
+    }
+    .containerTransparency{
+        margin-top: 0px;
+        padding-left:20px;
+    }
+    .graphic{
+        width: auto;
+        height: 646px;
+    }
+    .textTransparency{
+        width: 316px;
+        height: 116px;
+        padding-top:24px;
+        font-size:24px;
+    }
+    .transparencyFlexBox{
+        display:flex;
+        flex-flow:row wrap;
+    }
+}
