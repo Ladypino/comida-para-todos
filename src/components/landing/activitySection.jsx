@@ -141,7 +141,7 @@ const ActivitySectionF = () => {
         <div class="powr-social-feed instagramMobile" id="7ee987e4_1603058181"></div>
         {/* <script src="https://www.powr.io/powr.js?platform=embed"></script> */}
       </div>
-      <p className="bottomTextInsta">hace 5 días en @comida_para_todos_cl </p>
+      {/* <p className="bottomTextInsta">hace 5 días en @comida_para_todos_cl </p> */}
       <div className="h2Carrousel">
         <h1 className="titleActSecs">NUESTROS COLABORADORES</h1>
       </div>

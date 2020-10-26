@@ -58,7 +58,7 @@
   height: 32px;
 }
 
-.titleActSec {
+.titleActSecs {
   text-align: start;
   margin-left: 16px;
   margin: 11px;
@@ -154,18 +154,18 @@ height: 90rem;
     display: none;
   }
   .imgActivity {
-    height: 150x;
+    height: 150px;
     width: 150px;
   }
 
   .titleGalery {
     font-size: 30px;
 }
-  .titleActSec{
+  .titleActSecs{
     font-size: 30px;
-    margin-left: 19rem;
+    margin-left: 80px;
+    margin-top: 40px;
   }
-
 
   .imgGalery{
     width: 28rem;

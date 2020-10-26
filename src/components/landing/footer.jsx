@@ -33,17 +33,14 @@ function Footer() {
             <p className='textFooter'>Av. Condell #566, Santiago</p>
           </a>
         </div>
-        <Link to= "/Intranet">
-        <div className='containerEachContact'>
-         
+        <Link className='linkExterno2' to="/Intranet">
+          <div className='containerEachContact'>
             <img src={Lan} alt="intraIcon" className='iconFooter' />
             <p className='textFooter'>Intranet</p>
           </div>
-       
         </Link>
       </div>
     </footer>
-
   );
 }
 
