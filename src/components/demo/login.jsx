@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 
 const Login = (props) => {
 
-  const [email, setEmail] = useState(null);
-  const [password, setPassword] = useState(null);
-  const [error, setError] = React.useState(null)
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = React.useState('')
   const [esRegistro, setEsRegistro] = React.useState(false)
 
   const procesarDatos = e => {

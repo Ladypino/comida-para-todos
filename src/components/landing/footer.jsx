@@ -4,6 +4,9 @@ import logo from '../../img/logo.png'
 import Ig from '../../img/Footer/insta.png';
 import maps from '../../img/Footer/maps.png';
 import Mail from '../../img/Footer/mail.png';
+import { Link } from 'react-router-dom';
+import Lan from '../../img/Footer/lan.png';
+
 
 function Footer() {
   return (
@@ -30,6 +33,14 @@ function Footer() {
             <p className='textFooter'>Av. Condell #566, Santiago</p>
           </a>
         </div>
+        <Link to= "/Intranet">
+        <div className='containerEachContact'>
+         
+            <img src={Lan} alt="intraIcon" className='iconFooter' />
+            <p className='textFooter'>Intranet</p>
+          </div>
+       
+        </Link>
       </div>
     </footer>
 
